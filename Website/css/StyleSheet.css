@@ -1,0 +1,78 @@
+﻿body
+{
+    font-family:Tahoma;
+    direction:rtl;
+    font-size:10pt;
+}
+#container
+{
+    border-width: 20px;
+    border-color: #223f8f;
+    width: 17cm;
+    margin: 0 auto;
+    border-top-style: solid;
+}
+#header
+{
+    width:16cm;
+    float:left;   
+    text-align:right;
+       padding-right: .5cm;
+    padding-left: .5cm;
+     
+}
+
+
+#payinfo
+{
+    border-color: #999999;
+    border-width: 1px;
+    width: 16cm;
+    float: left;
+    text-align: right;
+    padding-right: .5cm;
+    padding-left: .5cm;
+    border-top-style: dotted;
+   }
+   
+   #sendinfo
+{
+    border-color: #999999;
+    border-width: 1px;
+    width: 16cm;
+    float: left;
+    text-align: right;
+    padding-right: .5cm;
+    padding-left: .5cm;
+    border-top-style: dotted;
+   }
+
+
+#footer
+{
+    width: 16cm;
+    float: left;
+    text-align: right;
+    padding-right: .5cm;
+    padding-left: .5cm;
+    padding-top :.5cm;
+     padding-bottom  : .5cm;
+    border-style: solid;
+    border-width: 1px 1px 25px 1px;
+    border-color: #223f8f;
+    
+}
+
+#content
+{
+       border-color: #999999;
+    border-width: 1px;
+
+    width: 16cm;
+    float: left;
+    text-align: right;
+    padding-right: .5cm;
+    padding-left: .5cm;
+   
+    border-top-style: dotted;   
+}

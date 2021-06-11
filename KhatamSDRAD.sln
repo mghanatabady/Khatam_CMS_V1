@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{E09F0CF1-9630-4A48-B10B-1D31AF311BB1}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}|KhatamSDRADCORE.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Website"
+		Debug.AspNetCompiler.PhysicalPath = "Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Website"
+		Release.AspNetCompiler.PhysicalPath = "Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "24350"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhatamSDRADCORE", "KhatamSDRADCORE\KhatamSDRADCORE.csproj", "{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "KhatamModelingProject", "KhatamModelingProject\KhatamModelingProject.modelproj", "{FB04BE10-0FEE-49BD-944E-722AF4492D0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E09F0CF1-9630-4A48-B10B-1D31AF311BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09F0CF1-9630-4A48-B10B-1D31AF311BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09F0CF1-9630-4A48-B10B-1D31AF311BB1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09F0CF1-9630-4A48-B10B-1D31AF311BB1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB04BE10-0FEE-49BD-944E-722AF4492D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB04BE10-0FEE-49BD-944E-722AF4492D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB04BE10-0FEE-49BD-944E-722AF4492D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB04BE10-0FEE-49BD-944E-722AF4492D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

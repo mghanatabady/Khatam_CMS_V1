@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localization>
+  <string id="Authorization">Authorization</string>
+  <string id="pleaseAuthorize">Please authorize</string>
+  <string id="UserName">Login</string>
+  <string id="Password">Password</string>
+  <string id="RememberMeOnthisComputer">Remember me on this computer</string>
+  <string id="Authorize">Authorize</string>
+  <string id="ForgotYourPassword">Forgot your password</string>
+  <string id="BackToLoginPage">Back To Login page</string>
+  <string id="Gotothe">Go to the</string>
+  <string id="requestPasswordForm">request password form</string>
+  <string id="CAPTCHAcode">CAPTCHA code</string>
+  <string id="IncorrectCAPTCHAcodeEntered">Incorrect CAPTCHA code entered</string>
+  <string id="UsernameOrPasswordIsWrong">Username or password is wrong.</string>
+  <string id="PleaseInsertUsername">Please insert your username.</string>
+  <string id="PleaseInsertPassword">Please insert your password.</string>
+  <string id="PleaseInsertCaptcha">Please insert Captcha Code.</string>
+  <string id="PasswordRecovery">Password Recovery</string>
+  <string id="Email">Email</string>
+  <string id="EmailSentOD">A mail has been sent to your mail, with your Password details.</string>
+  <string id="Send">Send</string>
+  <string id="UserNotFound">User Not Found</string>
+  <string id="resendActivationEmail">Resend Activation Email</string>
+  <string id="EmailNotActive">Email is not active,See the activation email sent to you at the time of registration Or go to the following address, to send the activation email again:</string>
+  <string id="ErrorUserWasActive">Your username has already been activated</string>
+  <string id="EmailSentActivation">Activation email has been sent</string>
+  <string id="ActivationProcessWasSuccessful">Activation process was successful</string>
+  <string id="Errorinactivationoperation">Error in activation operation</string>
+  <string id="uniStudentId">student Identity</string>
+  <string id="student">Student</string>
+  <string id="Employee">Employee</string>
+  <string id="UniversityTeachers">University teachers</string>
+
+
+  
+
+  
+
+
+
+
+</localization>

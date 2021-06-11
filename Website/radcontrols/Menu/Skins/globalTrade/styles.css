@@ -1,0 +1,144 @@
+/* r.a.d.menu globalTrade skin */
+
+.RadMenu_globalTrade
+{
+	/*border: solid 1px #dadada;*/
+	border-bottom: 0px;
+	/*background: #e9e9e9 url('img/MainItemBackground.gif') repeat-x;*/
+
+	
+}
+
+.RadMenu_globalTrade .link
+{
+	text-decoration: none;
+	 font-weight:bold;
+	color: #3a33ab;
+	line-height: 22px;
+	/*background: #e9e9e9 url('img/MainItemBackground.gif') repeat-x;*/
+}
+
+.RadMenu_globalTrade .link:hover,
+.RadMenu_globalTrade .focused,
+.RadMenu_globalTrade .expanded
+{
+	color: #f87102;
+	/*background: #4291ec url('img/MainItemBackgroundHvr.gif') repeat-x;*/
+	
+}
+
+.RadMenu_globalTrade .text
+{
+	font-size: 11px;
+	padding: 0px 9px;
+}
+
+.RadMenu_globalTrade .group
+{
+	/*background: white url('img/MenuItemBackground.gif');*/
+	border: solid 1px #dadada;
+	 background-color:White;
+}
+
+.RadMenu_globalTrade .group .link
+{
+	background: none;
+	/*width: 140px;*/
+	text-align: right;
+	direction:rtl ;
+	color: #333;
+}
+
+.RadMenu_globalTrade .group .text
+{
+	padding-left: 12px;
+	color:#3a33ab;
+}
+
+.RadMenu_globalTrade .group .link:hover,
+.RadMenu_globalTrade .group .focused,
+.RadMenu_globalTrade .group .expanded
+{
+	background: #c8d6fb url('img/MenuItemBackgroundHvr.gif') repeat-x;
+	color: #3a33ab;
+}
+
+.RadMenu_globalTrade .leftArrow,
+.RadMenu_globalTrade .rightArrow,
+.RadMenu_globalTrade .topArrow,
+.RadMenu_globalTrade .bottomArrow,
+.RadMenu_globalTrade .leftArrowDisabled,
+.RadMenu_globalTrade .rightArrowDisabled,
+.RadMenu_globalTrade .topArrowDisabled,
+.RadMenu_globalTrade .bottomArrowDisabled
+{
+	background: #326dc8 url('img/left.gif') center center no-repeat;
+	width: 15px;
+}
+
+.RadMenu_globalTrade .topArrow,
+.RadMenu_globalTrade .topArrowDisabled
+{
+	background-image:url('img/top.gif');
+	width: 100%;
+}
+
+.RadMenu_globalTrade .bottomArrow,
+.RadMenu_globalTrade .bottomArrowDisabled
+{
+	background-image:url('img/bottom.gif');
+	width:100%;
+}
+
+.RadMenu_globalTrade .rightArrow,
+.RadMenu_globalTrade .leftArrow
+{
+	height:100%;
+}
+
+.RadMenu_globalTrade .rightArrow,
+.RadMenu_globalTrade .rightArrowDisabled
+{
+	background-image: url('img/right.gif');
+}
+
+.RadMenu_globalTrade .vertical .separator .text
+{
+	padding-top: 1px;
+	background:	#d0d2d4;
+	font-size: 0px;
+	border-top:0px;
+	border-bottom:0px;
+}
+
+.RadMenu_globalTrade .expandLeft,
+.RadMenu_globalTrade .expandRight
+{
+	background:transparent url(img/groupImage.gif) right center no-repeat;
+}
+
+.RadMenu_globalTrade_rtl .expandLeft,
+.RadMenu_globalTrade_rtl .expandRight
+{
+	background: transparent url(img/left.gif) left center no-repeat;
+	
+}
+
+/* right to left */
+.RadMenu_globalTrade_rtl .group .link:hover .expandLeft,
+.RadMenu_globalTrade_rtl .group .link:hover .expandRight
+{
+	background:transparent url(img/invertedGroupImageRTL.gif) left center no-repeat;
+	margin: 0px;
+	
+}
+
+.RadMenu_globalTrade .link:hover .expandLeft,
+.RadMenu_globalTrade .link:hover .expandRight,
+.RadMenu_globalTrade .focused .expandLeft,
+.RadMenu_globalTrade .focused .expandRight,
+.RadMenu_globalTrade .expanded .expandLeft,
+.RadMenu_globalTrade .expanded .expandRight
+{
+	background:transparent url(img/invertedGroupImage.gif) right center no-repeat;
+}

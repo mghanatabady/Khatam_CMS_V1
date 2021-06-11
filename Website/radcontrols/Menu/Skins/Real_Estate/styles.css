@@ -1,0 +1,187 @@
+/* r.a.d.menu CssGreen skin */
+.RadMenu_Real_Estate
+{
+	background: #bedab4;
+	height:51px;
+	background-image:url('img/Menubg.gif');
+}
+
+.RadMenu_Real_Estate .link
+{
+	text-decoration:none;
+	color: #91c974;
+	line-height: 51px;
+
+	/*
+	border-bottom: 2px solid #bedab4;
+	border-top: 3px solid #bedab4;*/
+}
+
+.RadMenu_Real_Estate .link .text
+{
+	padding-right: 20px;
+}
+
+.RadMenu_Real_Estate .link:hover, .RadMenu_Real_Estate .focused, .RadMenu_Real_Estate .expanded
+{
+    /*
+	border-bottom: 3px solid #e88a15;
+	border-top: 1px solid #6baf5a;*/
+    background: #93c57d;
+    color: White;
+    background-image: url('img/btn.jpg');
+    background:#e6eee4 url('img/btn.jpg') center center no-repeat;
+}
+
+.RadMenu_Real_Estate .link:hover .text,
+.RadMenu_Real_Estate .focused .text,
+.RadMenu_Real_Estate .expanded .text
+{
+	border-top: 1px solid #aad199;
+}
+
+.RadMenu_Real_Estate .rootGroup .disabled:hover
+{
+	border-bottom: 2px solid #bedab4;
+	border-top: 2px solid #bedab4;
+	background: #bedab4;
+}
+
+.RadMenu_Real_Estate .rootGroup .disabled:hover .text
+{
+	border-top: 1px solid #bedab4;
+}
+
+.RadMenu_Real_Estate .text
+{
+	padding: 0px 15px;
+	font-size: 11px;
+}
+
+.RadMenu_Real_Estate .group
+{
+	background: white;
+}
+
+.RadMenu_Real_Estate .group
+{
+	border: 0px;
+}
+
+.RadMenu_Real_Estate .group .link
+{
+	background: #e6eee4;
+	background:#bedab4;
+	border: solid 1px #c2e3bf;
+	border-top-color: white;
+	text-align: left;
+	color:Black;
+}
+
+.RadMenu_Real_Estate .group .text
+{
+	padding-left:6px;
+	padding-right: 40px;
+}
+
+
+.RadMenu_Real_Estate .group .link:hover .text,
+.RadMenu_Real_Estate .group .focused .text,
+.RadMenu_Real_Estate .group .expanded .text
+{
+	border-top: 0px;
+	background:#93c57d;
+}
+
+.RadMenu_Real_Estate .group .link:hover,
+.RadMenu_Real_Estate .group .focused,
+.RadMenu_Real_Estate .group .expanded
+{
+	background: #bedab4;
+	border-bottom: 1px solid #e88a15;
+	border-top: 1px solid white;
+	font-weight: normal;
+}
+
+.RadMenu_Real_Estate .leftArrow,
+.RadMenu_Real_Estate .rightArrow,
+.RadMenu_Real_Estate .topArrow,
+.RadMenu_Real_Estate .bottomArrow,
+.RadMenu_Real_Estate .leftArrowDisabled,
+.RadMenu_Real_Estate .rightArrowDisabled,
+.RadMenu_Real_Estate .topArrowDisabled,
+.RadMenu_Real_Estate .bottomArrowDisabled
+{
+	border-left: 1px solid #c2e3bf;
+	border-right: 1px solid #c2e3bf;
+	background:#e6eee4 url('img/left.gif') center center no-repeat;
+	width:15px;
+}
+
+.RadMenu_Real_Estate .topArrow,
+.RadMenu_Real_Estate .topArrowDisabled
+{
+	background-image:url('img/top.gif');
+	width:100%;
+}
+
+.RadMenu_Real_Estate .bottomArrow,
+.RadMenu_Real_Estate .bottomArrowDisabled
+{
+	background-image:url('img/bottom.gif');
+	width:100%;
+}
+
+.RadMenu_Real_Estate .rightArrow,
+.RadMenu_Real_Estate .leftArrow
+{
+	height:100%;
+}
+
+.RadMenu_Real_Estate .rightArrow,
+.RadMenu_Real_Estate .rightArrowDisabled
+{
+	background-image:url('img/right.gif');
+}
+
+.RadMenu_Real_Estate .vertical .separator .text
+{
+	background: #dbe5d8;
+	font-size:1px;
+	padding-top: 2px;
+	border-left: solid 1px #c2e3bf;
+	border-right: solid 1px #c2e3bf;
+}
+
+.RadMenu_Real_Estate .expandLeft,
+.RadMenu_Real_Estate .expandRight
+{
+	background:transparent url(img/groupImage.gif) right center no-repeat;
+	margin: 0px 3px;
+}
+
+.RadMenu_Real_Estate .link:hover .expandLeft,
+.RadMenu_Real_Estate .link:hover .expandRight,
+.RadMenu_Real_Estate .focused .expandLeft,
+.RadMenu_Real_Estate .focused .expandRight,
+.RadMenu_Real_Estate .expanded .expandLeft,
+.RadMenu_Real_Estate .expanded .expandRight
+{
+	background:transparent url(img/invertedGroupImage.gif) right center no-repeat;
+}
+
+/* right to left */
+.RadMenu_Real_Estate_rtl .group .link:hover .expandLeft,
+.RadMenu_Real_Estate_rtl .group .link:hover .expandRight
+{
+	background:transparent url(img/left.gif) left center no-repeat;
+	margin: 0px 1px;
+	padding-left: 8px;
+}
+
+.RadMenu_Real_Estate_rtl .expandLeft,
+.RadMenu_Real_Estate_rtl .expandRight
+{
+	background:transparent url(img/groupImageRTL.gif) left center no-repeat;
+}
+/* end right to left */

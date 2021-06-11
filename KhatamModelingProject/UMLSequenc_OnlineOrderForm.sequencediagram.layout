@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenc_OnlineOrderForm">
+  <SequenceDesignerModelMoniker Id="04c0ee55-dcf1-4610-afe1-b9998a8b3531" />
+  <nestedChildShapes>
+    <lifelineShape Id="321105cd-e290-4acb-ae42-6cdd5df0b8ae" absoluteBounds="1.025, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="7439521d-8ec1-468f-9e06-9b2361525534" LastKnownName="customer : customer" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="534e97fb-2144-462b-98ea-4abf21890456" absoluteBounds="0.38473891735076893, 0.6, 1.4305221652984619, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="7439521d-8ec1-468f-9e06-9b2361525534" LastKnownName="customer : customer" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="128212f6-5cb9-4d52-9034-9a86fe9c6d5b" absoluteBounds="1.025, 1, 0, 7">
+          <lifelineMoniker Id="7439521d-8ec1-468f-9e06-9b2361525534" LastKnownName="customer : customer" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

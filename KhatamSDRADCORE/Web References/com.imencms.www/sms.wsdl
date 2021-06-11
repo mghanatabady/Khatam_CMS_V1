@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="ImenCMS_SMS_Service" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="ImenCMS_SMS_Service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="ImenCMS_SMS_Service">
+      <s:element name="Send_x0020_One_x0020_SMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_One_x0020_SMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_One_x0020_SMSResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LineNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LineNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefererID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LineNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LineNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefererID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_ArrayList_x0020_SMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Send_x0020_ArrayList_x0020_SMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_ArrayList_x0020_SMSResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LineNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LineNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefererID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendOneSMSAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefererID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendOneSMSAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendOneSMSAgentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefererID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSAgentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendArraySMSAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefererID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendArraySMSAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendArraySMSAgentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCredit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCreditResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Recive_x0020_SMS_x0020_DataTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReciveID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Recive_x0020_SMS_x0020_DataTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Recive_x0020_SMS_x0020_DataTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Recive_x0020_SMS_x0020_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReciveID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Recive_x0020_SMS_x0020_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Recive_x0020_SMS_x0020_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Send_x0020_One_x0020_SMSSoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_One_x0020_SMS" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_One_x0020_SMSSoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_One_x0020_SMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.SoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No." />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.SoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.Response" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoSoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoSoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_SoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_SoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_Response" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_SoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_SoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_Response" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_Response" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_ArrayList_x0020_SMSSoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_ArrayList_x0020_SMS" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_ArrayList_x0020_SMSSoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_ArrayList_x0020_SMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_SoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_SoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_Response" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapIn">
+    <wsdl:part name="parameters" element="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_" />
+  </wsdl:message>
+  <wsdl:message name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapOut">
+    <wsdl:part name="parameters" element="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_Response" />
+  </wsdl:message>
+  <wsdl:message name="SendOneSMSAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:SendOneSMSAgent" />
+  </wsdl:message>
+  <wsdl:message name="SendOneSMSAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:SendOneSMSAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSAgent" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendArraySMSAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:SendArraySMSAgent" />
+  </wsdl:message>
+  <wsdl:message name="SendArraySMSAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:SendArraySMSAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCredit" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="Recive_x0020_SMS_x0020_DataTableSoapIn">
+    <wsdl:part name="parameters" element="tns:Recive_x0020_SMS_x0020_DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Recive_x0020_SMS_x0020_DataTableSoapOut">
+    <wsdl:part name="parameters" element="tns:Recive_x0020_SMS_x0020_DataTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="Recive_x0020_SMS_x0020_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:Recive_x0020_SMS_x0020_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Recive_x0020_SMS_x0020_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:Recive_x0020_SMS_x0020_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SMSServiceSoap">
+    <wsdl:operation name="SendOneSMS">
+      <wsdl:input name="Send_x0020_One_x0020_SMS" message="tns:Send_x0020_One_x0020_SMSSoapIn" />
+      <wsdl:output name="Send_x0020_One_x0020_SMS" message="tns:Send_x0020_One_x0020_SMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMS">
+      <wsdl:input name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No." message="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.SoapIn" />
+      <wsdl:output name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No." message="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">LineNo mast use +983000... or empty;</wsdl:documentation>
+      <wsdl:input name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo" message="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoSoapIn" />
+      <wsdl:output name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo" message="tns:Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_" message="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_SoapIn" />
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_" message="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_" message="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_SoapIn" />
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_" message="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_" message="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapIn" />
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_" message="tns:Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS" message="tns:Send_x0020_ArrayList_x0020_SMSSoapIn" />
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS" message="tns:Send_x0020_ArrayList_x0020_SMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_" message="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_SoapIn" />
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_" message="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_" message="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapIn" />
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_" message="tns:Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMSAgent">
+      <wsdl:input message="tns:SendOneSMSAgentSoapIn" />
+      <wsdl:output message="tns:SendOneSMSAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSAgent">
+      <wsdl:input message="tns:SendSMSAgentSoapIn" />
+      <wsdl:output message="tns:SendSMSAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMSAgent">
+      <wsdl:input message="tns:SendArraySMSAgentSoapIn" />
+      <wsdl:output message="tns:SendArraySMSAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCredit">
+      <wsdl:input message="tns:GetCreditSoapIn" />
+      <wsdl:output message="tns:GetCreditSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveSMSDT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send DataTable</wsdl:documentation>
+      <wsdl:input name="Recive_x0020_SMS_x0020_DataTable" message="tns:Recive_x0020_SMS_x0020_DataTableSoapIn" />
+      <wsdl:output name="Recive_x0020_SMS_x0020_DataTable" message="tns:Recive_x0020_SMS_x0020_DataTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveSMSDS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send DataSet</wsdl:documentation>
+      <wsdl:input name="Recive_x0020_SMS_x0020_DataSet" message="tns:Recive_x0020_SMS_x0020_DataSetSoapIn" />
+      <wsdl:output name="Recive_x0020_SMS_x0020_DataSet" message="tns:Recive_x0020_SMS_x0020_DataSetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SMSServiceSoap" type="tns:SMSServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendOneSMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send One SMS" style="document" />
+      <wsdl:input name="Send_x0020_One_x0020_SMS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_One_x0020_SMS">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send One SMS with Line No." style="document" />
+      <wsdl:input name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send One SMS with ReffererID and LineNo" style="document" />
+      <wsdl:input name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send Array SMS Number " style="document" />
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send Array SMS Number with Line No. " style="document" />
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send Array SMS Number with Line No. and Refferer ID " style="document" />
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send ArrayList SMS" style="document" />
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send ArrayList SMS with Line No. " style="document" />
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Send ArrayList SMS with Line No. and Refferer ID " style="document" />
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMSAgent">
+      <soap:operation soapAction="ImenCMS_SMS_Service/SendOneSMSAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSAgent">
+      <soap:operation soapAction="ImenCMS_SMS_Service/SendSMSAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMSAgent">
+      <soap:operation soapAction="ImenCMS_SMS_Service/SendArraySMSAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCredit">
+      <soap:operation soapAction="ImenCMS_SMS_Service/GetCredit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveSMSDT">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Recive SMS DataTable" style="document" />
+      <wsdl:input name="Recive_x0020_SMS_x0020_DataTable">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Recive_x0020_SMS_x0020_DataTable">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveSMSDS">
+      <soap:operation soapAction="ImenCMS_SMS_Service/Recive SMS DataSet" style="document" />
+      <wsdl:input name="Recive_x0020_SMS_x0020_DataSet">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Recive_x0020_SMS_x0020_DataSet">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SMSServiceSoap12" type="tns:SMSServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendOneSMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send One SMS" style="document" />
+      <wsdl:input name="Send_x0020_One_x0020_SMS">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_One_x0020_SMS">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send One SMS with Line No." style="document" />
+      <wsdl:input name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_One_x0020_SMS_x0020_with_x0020_Line_x0020_No.">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send One SMS with ReffererID and LineNo" style="document" />
+      <wsdl:input name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_One_x0020_SMS_x0020_with_x0020_ReffererID_x0020_and_x0020_LineNo">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send Array SMS Number " style="document" />
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send Array SMS Number with Line No. " style="document" />
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send Array SMS Number with Line No. and Refferer ID " style="document" />
+      <wsdl:input name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_Array_x0020_SMS_x0020_Number_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send ArrayList SMS" style="document" />
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send ArrayList SMS with Line No. " style="document" />
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Send ArrayList SMS with Line No. and Refferer ID " style="document" />
+      <wsdl:input name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Send_x0020_ArrayList_x0020_SMS_x0020_with_x0020_Line_x0020_No._x0020_and_x0020_Refferer_x0020_ID_x0020_">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOneSMSAgent">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/SendOneSMSAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSAgent">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/SendSMSAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendArraySMSAgent">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/SendArraySMSAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCredit">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/GetCredit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveSMSDT">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Recive SMS DataTable" style="document" />
+      <wsdl:input name="Recive_x0020_SMS_x0020_DataTable">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Recive_x0020_SMS_x0020_DataTable">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveSMSDS">
+      <soap12:operation soapAction="ImenCMS_SMS_Service/Recive SMS DataSet" style="document" />
+      <wsdl:input name="Recive_x0020_SMS_x0020_DataSet">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Recive_x0020_SMS_x0020_DataSet">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SMSService">
+    <wsdl:port name="SMSServiceSoap" binding="tns:SMSServiceSoap">
+      <soap:address location="http://www.imencms.com/sms/sms.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SMSServiceSoap12" binding="tns:SMSServiceSoap12">
+      <soap12:address location="http://www.imencms.com/sms/sms.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

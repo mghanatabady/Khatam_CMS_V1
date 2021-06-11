@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="47b91b37-4425-4472-a1f1-956397be2f1f" name="sendProduct" linkedPackageId="0d38619e-7e17-43bd-ba68-00d3c2fa5424" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="a28a9ba2-a20c-4f03-98ee-f1c5d8c1cb43">
+      <elementDefinition Id="ac54c9d3-6e7c-40d9-9a65-a6d81aa29a24" />
+      <body>پست خرید
+اتوبوس
+آژانس</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="40c0fc9e-3c1e-42cc-9389-c6b00a088d64">
+      <profileInstance Id="a447f09d-b7a3-4e2f-b48b-621538400685" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="62543ef1-fbea-4b69-b13f-d34a3d74f337">
+      <profileInstance Id="732daacc-bb08-4f35-b9bb-ec304b0cf790" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8bbe6489-5cb9-46fc-9080-ec04d5e6eee3" name="send_mode" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50390feb-65aa-48a8-814c-ccca7c86e3d3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c00d9124-83c4-4382-820a-7b8cedfe8bbe" name="send_terms" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23499c88-3390-49bf-8df5-843fa6da4f7f" />
+        <additions>
+          <include Id="02bc2fc2-53ca-441f-bf35-fddc369f6382">
+            <useCaseMoniker Id="8bbe6489-5cb9-46fc-9080-ec04d5e6eee3" LastKnownName="send_mode" />
+            <elementDefinition Id="ac4b3a90-d43d-48b0-97de-524029b70589" />
+          </include>
+          <include Id="5a56e73d-3f18-470a-8f0f-7da9f811cacb">
+            <useCaseMoniker Id="5b7165b2-b2fc-4232-b421-4cbb758d58b2" LastKnownName="country" />
+            <elementDefinition Id="87572f9c-934f-453a-b800-ba8be122d516" />
+          </include>
+          <include Id="d201fff5-3dab-4cf8-9b76-e096a2341bdb">
+            <useCaseMoniker Id="e515ebe4-75c1-4953-a19e-3610fb07cb32" LastKnownName="state" />
+            <elementDefinition Id="f2dccbe6-15fe-4159-980c-e2d94907cf0e" />
+          </include>
+          <include Id="fa110a66-db8c-4c4b-aea9-1cb57301c179">
+            <useCaseMoniker Id="45e797be-eb0b-4605-9e98-c0cfaee82e69" LastKnownName="city" />
+            <elementDefinition Id="474d488c-bd73-4b2a-b881-b38f1a5c50cf" />
+          </include>
+          <include Id="f9ca6dbf-b423-4bfc-8848-2b6f861a8cb6">
+            <useCaseMoniker Id="76d265d2-e56c-4fc1-a8a4-356b1eeba875" LastKnownName="area" />
+            <elementDefinition Id="4889562a-dfbe-4d73-a73b-9a7d10c01109" />
+          </include>
+          <include Id="cd0d6cc7-9dab-4afd-ae28-1f8098db6ff1">
+            <useCaseMoniker Id="d284eb03-2b68-41b4-83a2-7df64f17ef0a" LastKnownName="store_source_id" />
+            <elementDefinition Id="4a29c260-60e6-4386-af3f-0b28abd9ba92" />
+          </include>
+          <include Id="d4092d58-7756-4b59-b595-b8e1854ec58b">
+            <useCaseMoniker Id="5591cb3a-b4fb-40ae-a7a2-7e59280e974a" LastKnownName="source_city_id" />
+            <elementDefinition Id="9033e49a-6d3e-406d-8f41-2e7413b76200" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5b7165b2-b2fc-4232-b421-4cbb758d58b2" name="country" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2555a121-426a-44a9-a6e8-57af51ef44a3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45e797be-eb0b-4605-9e98-c0cfaee82e69" name="city" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="72c96a69-3a94-4fd9-84d4-9fdcec549573" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="76d265d2-e56c-4fc1-a8a4-356b1eeba875" name="area" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a2e18bf-038d-4df6-8e87-49a2b8c3dfb9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e515ebe4-75c1-4953-a19e-3610fb07cb32" name="state" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed7e5ba7-bde9-473a-8261-aca1141eadd9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d284eb03-2b68-41b4-83a2-7df64f17ef0a" name="store_source_id" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="822d3cfe-7af0-4031-9cbc-8830fa48c509" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5591cb3a-b4fb-40ae-a7a2-7e59280e974a" name="source_city_id" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1210828d-d08f-4f47-9b1c-26dab29f6bba" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1fb101ae-9fc0-4fa4-a1d2-8fc59351dfad" name="sendPay_before_Title" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a7a3cc1-dac6-403a-87da-b8eef2bdb199" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="37ddbbcc-4c1b-4a4e-953e-cbf3964caf09" name="sendPay_before_price" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="269d90d6-9d4f-4b8c-a87a-5fef64c2e73d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="579c5cc9-e44a-479b-a153-17d2df285948" name="sendPay_before_price_unit_id" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3652efc-13aa-4d5e-8f40-2561862d4671" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a20173fe-9ce5-41e7-8eb3-7a509684c0c7" name="sendPay_onDelivery_Title" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ffc29c39-d71a-472a-8ca4-bcf4249b9d2b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a9d8fce0-e5fe-43cd-892c-af66d5eb1f26" name="sendPay_onDelivery_Title_price" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f44aebd0-e688-4d20-aa0f-9e4d779ba965" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9553282-64b8-48e7-898a-0e21c8a2ea43" name="sendPay_onDelivery_unit_Id" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="84ffb9eb-6a13-4c55-aa3b-5a157d834c3c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0d38619e-7e17-43bd-ba68-00d3c2fa5424" name="KhatamModelingProject">
+    <elementDefinition Id="46f29867-a642-4718-b6e6-b8624dadb0e0" />
+  </package>
+</useCaseModelRoot>

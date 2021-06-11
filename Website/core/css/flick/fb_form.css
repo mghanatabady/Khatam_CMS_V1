@@ -1,0 +1,31 @@
+﻿/**************************************Global*******************************************/
+
+
+     .fb_row
+{
+    
+    direction: rtl;
+    text-align: right;
+    padding: 5px 20px 5px 20px;
+    line-height: 150%;
+}
+
+.tooltipA {
+    cursor: help;
+    text-decoration: none;
+}
+
+.Element_TextBox_small
+{
+     width:125px;
+}
+
+ .Element_TextBox_medium
+{
+     width:250px;
+}
+
+ .Element_TextBox_large 
+{
+     width:500px;
+}

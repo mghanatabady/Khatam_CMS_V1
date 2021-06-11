@@ -1,0 +1,4 @@
+﻿INSERT INTO coreRoleSys                     (id, title)    VALUES     (10001, N'uniproj_groupUser')
+INSERT INTO coreRoleSys                     (id, title)    VALUES     (10002, N'uniproj_teacher')
+INSERT INTO coreRoleSys                     (id, title)    VALUES     (10003, N'uniproj_student')
+INSERT INTO coreRoleSys                     (id, title)    VALUES     (10004, N'uniproj_researchDepartementUser')

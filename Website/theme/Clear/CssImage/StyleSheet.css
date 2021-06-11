@@ -1,0 +1,103 @@
+﻿html
+{
+    background-image: url('CssImage/splash.jpg');
+}
+
+body 
+{
+   font-family:Tahoma;
+ 
+}
+
+
+.infoWin_t {background: url(dot.gif) 0 0 repeat-x; border:1px solid #f1d38b; width: 100%}
+.infoWin_b {background: url(dot.gif) 0 100% repeat-x;border:1px solid #ffffff;}
+.infoWin_l {background: url(dot.gif) 0 0 repeat-y;border:2px solid #fcf4cd;}
+.infoWin_r {background: url(dot.gif) 100% 0 repeat-y}
+.infoWin_bl {background: url(bl.gif) 0 100% no-repeat}
+.infoWin_br {background: url(br.gif) 100% 100% no-repeat}
+.infoWin_tl {background: url(tl.gif) 0 0 no-repeat}
+.infoWin_tr {background: url(tr.gif) 100% 0 no-repeat; padding:10px} 
+
+.footer 
+{
+    font-size:8pt;
+    text-align:center;
+    
+     margin-top:10;
+}
+
+.footerP
+{
+  margin-top:0;
+     margin-bottom: 2px;
+}
+    a:link{color:#0033cc;text-decoration:none;}
+      a:hover{color:#ff6600;text-decoration:none;}
+
+
+   
+
+
+.gridlistrowTemplate
+{
+  
+   
+
+}
+
+.gridlistrowTemplateborder
+{
+    border-spacing: 0; 
+    border-collapse: collapse; 
+    border-style: none none dotted none;
+    border-width: 1px 1px 1px 1px;
+    border-color: #a9b4c3 #a9b4c3 #a9b4c3 #a9b4c3;
+   
+}
+
+.gridlistrowTemplate:hover
+{
+   background-color:#fffae3 ;
+}
+
+/*win1*/
+.Win1t_tb {background: url(CssImage/Win1/tb/t.gif) 0 0 repeat-x; width:98%; direction:rtl; text-align:right ; margin:10px 2px  0px 2px  }
+/*
+.Win1b_tb {background: url(CssImage/Win1/dot.gif) 0 100% repeat-x}
+
+.Win1l_tb {background: url(CssImage/Win1/dot.gif) 0 0 repeat-y}
+.Win1r_tb {background: url(CssImage/Win1/dot.gif) 100% 0 repeat-y}
+.Win1bl_tb {background: url(CssImage/Win1/bl.gif) 0 100% no-repeat}
+.Win1br_tb {background: url(CssImage/Win1/br.gif) 100% 100% no-repeat}*/
+.Win1tl_tb {background: url(CssImage/Win1/tb/tl.gif) 0 0 no-repeat}
+.Win1tr_tb {background: url(CssImage/Win1/tb/tr.gif) 100% 0 no-repeat; padding:5px;height:17px}
+
+.Win1t {background: url(CssImage/Win1/t.gif) 0 0 repeat-x; width: 98%;margin:0px  2px   0px 2px;  text-align:right ; direction:rtl }
+.Win1b {background: url(CssImage/Win1/b.gif) 0 100% repeat-x; }
+.Win1l {background: url(CssImage/Win1/dot.gif) 0 0 repeat-y; }
+.Win1r {background: url(CssImage/Win1/dot.gif) 100% 0 repeat-y;}
+.Win1bl {background: url(CssImage/Win1/bl.gif) 0 100% no-repeat;}
+.Win1br {background: url(CssImage/Win1/br.gif) 100% 100% no-repeat; }
+.Win1tl {background: url(CssImage/Win1/tl.gif) 0 0 no-repeat; }
+.Win1tr {    background: url(CssImage/Win1/tr.gif) 100% 0 no-repeat;     padding:10px ; }
+
+/*win2*/
+
+
+.Win2t {background: url(CssImage/Win2/l.gif) 0 0 repeat-y; width: 98%;margin:10px  2px   0px 2px;  text-align:right ; direction:rtl}
+.Win2b {background: url(CssImage/Win2/r.gif) 100% 0 repeat-y; }
+.Win2l {background: url(CssImage/Win2/t.gif) 0 0 repeat-x;  }
+.Win2r {background: url(CssImage/Win2/b.gif)  0 100% repeat-x;}
+.Win2bl {background: url(CssImage/Win2/bl.gif) 0 100% no-repeat;}
+.Win2br {background: url(CssImage/Win2/br.gif) 100% 100% no-repeat; }
+.Win2tl {background: url(CssImage/Win2/tl.gif) 0 0 no-repeat; }
+.Win2tr {    background: url(CssImage/Win2/tr.gif) 100% 0 no-repeat;     padding:10px ; }
+
+.tb
+{
+  font-size:10pt ;   
+     text-align:right;
+     font-family:Tahoma;
+     margin:5px;
+}

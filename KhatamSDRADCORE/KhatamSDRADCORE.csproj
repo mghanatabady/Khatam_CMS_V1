@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D472AC7-4076-4B6D-A18A-2E07B9BA8F2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KhatamSDRADCORE</RootNamespace>
+    <AssemblyName>KhatamSDRADCORE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Website\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET">
+      <HintPath>..\Website\Bin\CKEditor.NET.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DNA">
+      <HintPath>..\Website\Bin\DNA.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DNA.UI.JQuery">
+      <HintPath>..\Website\Bin\DNA.UI.JQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\Website\Bin\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Website\Bin\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Obout.Ajax.UI">
+      <HintPath>..\Website\Bin\Obout.Ajax.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Persia">
+      <HintPath>..\Website\Bin\Persia.dll</HintPath>
+    </Reference>
+    <Reference Include="RadAjax.Net2">
+      <HintPath>..\Library\Telerik\bin\RadAjax.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadDock.Net2">
+      <HintPath>..\Library\Telerik\bin\RadDock.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadMenu.Net2">
+      <HintPath>..\Library\Telerik\bin\RadMenu.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="Shinkansen">
+      <HintPath>..\Website\Bin\Shinkansen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="Core_UI_WebControl_estateSearchWin.cs" />
+    <Compile Include="Core_UI_baseControl_GeoSelector.cs" />
+    <Compile Include="Core_UI_WebControls_upload.cs" />
+    <Compile Include="Core_UI_WebControl_linkToUs.cs" />
+    <Compile Include="Core_UI_WebControl_tabs.cs" />
+    <Compile Include="Core_UI_WebControl_darmanInquiryWin.cs" />
+    <Compile Include="Core_support.cs" />
+    <Compile Include="Core_UI_WebControl_slider.cs" />
+    <Compile Include="Core_UI_WebControl_formPlaceHolder.cs" />
+    <Compile Include="Core_Math.cs" />
+    <Compile Include="core_rss.cs" />
+    <Compile Include="Core_UI_WebControl_domainSearchWin.cs" />
+    <Compile Include="core_globalization\core_globalization_geo.cs" />
+    <Compile Include="Core_License.cs" />
+    <Compile Include="domain.cs" />
+    <Compile Include="Core_XML.cs" />
+    <Compile Include="Core_UI_WebControl_Comments_commentWin.cs" />
+    <Compile Include="ConfigurationManager11.cs" />
+    <Compile Include="Core_UI_WebControl_ContentItemWin.cs" />
+    <Compile Include="Core_UI_Webcontrol_contentList.cs" />
+    <Compile Include="Core_UI_WebControl_contentPaging.cs" />
+    <Compile Include="Core_UI_WebControl_contentWin.cs" />
+    <Compile Include="Core_Data.cs" />
+    <Compile Include="Core_Drawing.cs" />
+    <Compile Include="Core_UI_webControl_editForm.cs" />
+    <Compile Include="Core_Net.cs" />
+    <Compile Include="Core_ErrorHandle.cs" />
+    <Compile Include="Core_Explorer.cs" />
+    <Compile Include="Core_Install.cs" />
+    <Compile Include="Core_UI_Manger.cs" />
+    <Compile Include="Core_UI_webControl_loginWin.cs" />
+    <Compile Include="Core_UI_webControl_membrshipWin.cs" />
+    <Compile Include="Core_UI_webControl_Menu.cs" />
+    <Compile Include="Core_RouteHandler.cs" />
+    <Compile Include="estate.cs" />
+    <Compile Include="forms.cs" />
+    <Compile Include="PasswordSetting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="school.cs" />
+    <Compile Include="Core_UI_webControl_searchWin.cs" />
+    <Compile Include="Core_Security.cs" />
+    <Compile Include="shop.cs" />
+    <Compile Include="Core_UI_webControl_shopCart.cs" />
+    <Compile Include="Core_strings.cs" />
+    <Compile Include="Sample_TempControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core_UI_webControl_TreeCat.cs" />
+    <Compile Include="uniproj_cluster.cs" />
+    <Compile Include="Web References\com.imencms.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\info.webimc.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.imencms.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.imencms.www\sms.wsdl" />
+    <None Include="Web References\info.webimc.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\info.webimc.www\ShoppingService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\com.imencms.www\sms.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.imencms.com/SMS/SMS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.imencms.www\</RelPath>
+      <UpdateFromURL>http://www.imencms.com/SMS/SMS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>KhatamSDRADCORE_com_imencms_www_SMSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.webimc.info/Webservice/ShoppingService.php">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\info.webimc.www\</RelPath>
+      <UpdateFromURL>http://www.webimc.info/Webservice/ShoppingService.php</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>KhatamSDRADCORE_info_webimc_www_ShoppingService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

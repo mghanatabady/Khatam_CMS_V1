@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localization>
+  <string id="Authorization">کنترل پنل</string>
+  <string id="pleaseAuthorize">تعیین هویت</string>
+  <string id="UserName">نام کاربری</string>
+  <string id="Password">کلمه عبور</string>
+  <string id="RememberMeOnthisComputer">مرا در این سیستم بخاطر داشته باش</string>
+  <string id="Authorize">ورود</string>
+  <string id="ForgotYourPassword">کلمه عبور را بخاطر ندارید؟</string>
+  <string id="BackToLoginPage">بازگشت به صفحه ورود</string>
+  <string id="Gotothe">مراجعه کنید به</string>
+  <string id="requestPasswordForm">فرم بازنشانی کلمه عبور</string>
+  <string id="CAPTCHAcode">حروف تصویر</string>
+  <string id="IncorrectCAPTCHAcodeEntered">حروف تصویر اشتباه است</string>
+  <string id="UsernameOrPasswordIsWrong">نام کاربری یا کلمه عبور اشتباه است</string>
+  <string id="PleaseInsertUsername">لطفا نام کاربری خود را وارد نمایید</string>
+  <string id="PleaseInsertPassword">لطفا کلمه عبور خود را وارد نمایید</string>
+  <string id="PleaseInsertCaptcha">لطفا حروف تصویر را درج نمایید</string>
+  <string id="PasswordRecovery">بازنشانی کلمه عبور</string>
+  <string id="Email">ایمیل</string>
+  <string id="EmailSentOD">ایمیل حاوی اطلاعات کلمه عبور ارسال گردید</string>
+  <string id="Send">ارسال</string>
+  <string id="UserNotFound">نام کاربری - ایمیل در لیست کاربران سایت وجود ندارد</string>
+  <string id="resendActivationEmail">ارسال مجدد ایمیل فعال سازی</string>
+  <string id="EmailNotActive">ایمیل فعال نیست، به ایمیلی فعال سازی که در زمان ثبت نام برای شما ارسال شد مراجعه کنید و یا از آدرس زیر برای ارسال مجدد ایمیل فعال سازی بهره بگیرید:</string>
+  <string id="ErrorUserWasActive">نام کاربری قبلا فعال گردیده است</string>
+  <string id="EmailSentActivation">ایمیل فعال سازی ارسال گردید</string>
+  <string id="ActivationProcessWasSuccessful">نام کاربری با موفقیت فعال گردید</string>
+  <string id="Errorinactivationoperation">خطا در عملیات فعال سازی</string>
+  <string id="uniStudentId">شماره دانشجویی</string>
+  <string id="student">دانشجویان</string>
+  <string id="Employee">کارمندان</string>
+  <string id="UniversityTeachers">اساتید</string>
+
+
+
+</localization>

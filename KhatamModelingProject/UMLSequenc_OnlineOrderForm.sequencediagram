@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="04c0ee55-dcf1-4610-afe1-b9998a8b3531" name="UMLSequenc_OnlineOrderForm" linkedPackageId="2d84ddb8-ea62-4592-9e8b-2ed43f7ce1ce" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="539dd3ea-d3f5-48d5-a144-8a90f16f60e4">
+      <profileInstance Id="137027e0-41e9-43cd-b639-65b5189f937e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5f6849d3-79a6-4ac1-a192-360e624095f9">
+      <profileInstance Id="341bdc12-8e31-4f01-acf4-38060b15d2d9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="9ef99c07-0dfe-4467-8647-858abca95e33" name="UMLSequenc_OnlineOrderForm" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="bc803904-8fbb-44ea-8933-c61e0e6e41a4" />
+        <lifelines>
+          <lifeline Id="7439521d-8ec1-468f-9e06-9b2361525534" name="customer : customer" isActor="true" lifelineDisplayName="customer : customer">
+            <elementDefinition Id="5f0390fe-c1f2-4ff0-9547-8dec2610ab71" />
+            <represents>
+              <propertyMoniker Id="64326db9-4316-4dd5-9686-d9c3e136ee6c" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <ownedAttributesInternal>
+          <property Id="64326db9-4316-4dd5-9686-d9c3e136ee6c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50060969-eb74-4219-97cc-c206518f844d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="36f6f945-a421-45c8-b9f7-f3134cc87c8b" LastKnownName="customer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="36f6f945-a421-45c8-b9f7-f3134cc87c8b" name="customer" isAbstract="false" isLeaf="false" cachedFullName="KhatamModelingProject::customer">
+        <elementDefinition Id="341d4136-e672-4ad7-881b-117c18641fb0" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2d84ddb8-ea62-4592-9e8b-2ed43f7ce1ce" name="KhatamModelingProject">
+    <elementDefinition Id="46f29867-a642-4718-b6e6-b8624dadb0e0" />
+  </package>
+</SequenceDesignerModel>

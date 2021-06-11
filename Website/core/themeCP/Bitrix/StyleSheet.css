@@ -1,0 +1,789 @@
+﻿/*KUI CSS*/
+
+body,div,dl,dt,dd,ol,h1,h2,h3,h4,h5,h6,pre,code,form,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+del,ins{text-decoration:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}
+sub{vertical-align:baseline}legend{color:#000}
+
+
+
+body{text-align:center}
+#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.25em}
+#doc2{width:73.076em;*width:71.25em}#doc3{margin:auto 10px;width:auto}#doc4{width:74.923em;*width:73.05em}
+.yui-b{position:relative}.yui-b{_position:static}#yui-main .yui-b{position:static}
+#yui-main,.yui-g .yui-u .yui-g{width:100%}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em}
+.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em}.yui-t1 .yui-b{float:left;width:12.30769em;*width:12.00em}
+.yui-t1 #yui-main .yui-b{margin-left:13.30769em;*margin-left:13.05em}.yui-t2 .yui-b{float:left;width:13.8461em;*width:13.50em}
+.yui-t2 #yui-main .yui-b{margin-left:14.8461em;*margin-left:14.55em}.yui-t3 .yui-b{float:left;width:23.0769em;*width:22.50em}
+.yui-t3 #yui-main .yui-b{margin-left:24.0769em;*margin-left:23.62em}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.50em}
+.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.55em}.yui-t5 .yui-b{float:right;width:18.4615em;*width:18.00em}
+.yui-t5 #yui-main .yui-b{margin-right:19.4615em;*margin-right:19.125em}.yui-t6 .yui-b{float:right;width:23.0769em;*width:22.50em}
+.yui-t6 #yui-main .yui-b{margin-right:24.0769em;*margin-right:23.62em}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0}
+#yui-main .yui-b{float:none;width:auto}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb 
+.yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left}.yui-g .yui-u,.yui-g .yui-g,.yui-g 
+.yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,
+.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right}.yui-g div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first,
+.yui-ge div.first,.yui-gf div.first,.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-gc div.first div.first{float:left}.yui-g .yui-u,
+.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,
+.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,
+.yui-gd .yui-u{width:32%;margin-left:1.99%}.yui-gb .yui-u{*margin-left:1.9%;*width:31.9%}.yui-gc div.first,
+.yui-gd .yui-u{width:65%}.yui-gd div.first{width:32%}.yui-ge div.first,.yui-gf .yui-u{width:74.2%}.yui-ge .yui-u,
+.yui-gf div.first{width:24%}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0}.yui-g .yui-g .yui-u,
+.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,
+.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0}.yui-g .yui-g .yui-u{width:48.1%}.yui-g .yui-gb div.first,
+.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%}.yui-g .yui-gc div.first,.yui-gd .yui-g{width:66%}
+.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0}
+.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%}.yui-g .yui-gb .yui-u{_margin-left:1.0%}
+.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%}
+.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0}
+.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0}
+.yui-gb .yui-gb .yui-u{_margin-left:.7%}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0}
+.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0}.yui-gb .yui-gd div.first{width:32%}
+.yui-g .yui-gd div.first{_width:29.9%}.yui-ge .yui-g{width:24%}.yui-gf .yui-g{width:74.2%}
+.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first{float:left}
+.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%}
+.yui-ge div.first .yui-gd .yui-u{width:65%}.yui-ge div.first .yui-gd div.first{width:32%}
+#hd:after,#bd:after,#ft:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,
+.yui-gf:after{content:"";display:block;clear:both}#hd,#bd,#ft,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1}
+/*Base*/
+body{}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}
+h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold}optgroup{font-weight:normal}
+abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}del{text-decoration:line-through}
+blockquote,ol,dl{margin:1em}ol,dl{margin-left:2em}ol{list-style:decimal outside}dl dd{margin-left:1em}
+th,td{/*border:1px solid #000;*/padding:.5em}th{font-weight:bold;text-align:center}
+caption{margin-bottom:.5em;text-align:center}sup{vertical-align:super}sub{vertical-align:sub}
+p,fieldset,table,pre{margin-bottom:1em}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]
+{padding:1px}img{-ms-interpolation-mode:bicubic}
+
+
+/* Optional scoped theme for tag-it which mimics the zendesk widget. */
+
+
+ul.tagit {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C6C6C6;
+    background:none repeat scroll 0 0 white;
+}
+ul.tagit li.tagit-choice {
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #CAD8F3;
+
+    background: none;
+    background-color: #DEE7F8;
+
+    color: #555;
+    font-weight: normal;
+}
+ul.tagit li.tagit-choice a.tagit-close {
+    text-decoration: none;
+}
+ul.tagit li.tagit-choice .tagit-close {
+    right: .4em;
+}
+ul.tagit li.tagit-choice .ui-icon {
+    display: none;
+}
+ul.tagit li.tagit-choice .tagit-close .text-icon {
+    display: inline;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #777;
+}
+ul.tagit li.tagit-choice:hover, ul.tagit li.tagit-choice.remove {
+    background-color: #bbcef1;
+    border-color: #6d95e0;
+}
+ul.tagit li.tagit-choice a.tagLabel:hover,
+ul.tagit li.tagit-choice a.tagit-close .text-icon:hover {
+    color: #222;
+}
+ul.tagit input[type="text"] {
+    color: #333333;
+    background: none;
+}
+ 
+/**********************************************************/
+
+
+
+body 
+{
+   font-family:Tahoma;
+   font-size:10pt;
+   margin:0;
+}
+
+strong
+{
+  font-size:  10pt;   
+}
+
+.loginBody
+{
+	
+background:#4a507b url(core/themeCP/Bitrix/CssImage/background/bg_fill.gif) repeat;
+	margin:0;
+	padding:0;
+ font-family:Tahoma;
+
+}
+
+.loginBody_red
+{
+	
+background:#4a507b url(core/themeCP/Bitrix/CssImage/background/bg_fill_red.gif) repeat;
+	margin:0;
+	padding:0;
+ font-family:Tahoma;
+
+}
+/* Authorization form */
+body, div.bx-auth-form td {font-family:Tahoma;}
+div.bx-auth-form {margin:16px; padding:8px; width:519px; 
+background-color:#F9FAFD;  box-sizing:border-box; -moz-box-sizing:border-box;
+}
+div.bx-auth-form div.bx-auth-header {font-size:100%; text-align:left; font-weight:bold; padding:0px 3px 8px 3px; margin:0px; background-image:url(core/themeCP/Bitrix/CssImage/toolbar/dots_auth.gif); background-position:left bottom; background-repeat:repeat-x;}
+div.bx-auth-form div.bx-auth-picture {width:105px; height:120px; margin:0px; background:url(core/themeCP/Bitrix/CssImage/icon/auth_pict.gif); background-position:center; background-repeat:no-repeat;}
+div.bx-auth-form div.bx-auth-picture_error {width:105px; height:120px; margin:0px; background:url(core/themeCP/Bitrix/CssImage/icon/warning.png); background-position:center; background-repeat:no-repeat;}
+div.bx-auth-form div.bx-auth-picture_install {width:105px; height:120px; margin:0px; background:url(core/themeCP/Bitrix/CssImage/icon/install.gif); background-position:center; background-repeat:no-repeat;}
+
+div.bx-auth-form td {font-size:90%; padding:3px;
+    text-align: left;
+}
+div.bx-auth-form div.bx-auth-table {margin-top:8px;
+    margin-right: 13px;
+}
+div.bx-auth-form p {line-height:140%;
+    text-align: left;
+    direction: rtl;
+}
+span.starrequired {color:red;}
+
+
+/* noname */
+
+.txtBox
+{
+  font-size:10pt;
+  font-family:Tahoma;
+  width:300px;
+
+     
+}
+
+.txtBox_1ltr
+{
+  font-size:10pt;
+  font-family:Tahoma;
+  width:200px;
+
+     
+}
+
+.txtIcon
+{
+     font-size:9pt;
+}
+
+.t {background: url(dot.gif) 0 0 repeat-x; }
+
+.l {background: url(core/themeCP/Bitrix/CssImage/TopBar/dot.gif) 0 0 repeat-y}
+.r {background: url(core/themeCP/Bitrix/CssImage/TopBar/dot.gif) 100% 0 repeat-y}
+.bl {background: url(core/themeCP/Bitrix/CssImage/TopBar/bl.gif) 0 100% no-repeat}
+.br {background: url(core/themeCP/Bitrix/CssImage/TopBar/br.gif) 100% 100% no-repeat}
+.tl {background: url(core/themeCP/Bitrix/CssImage/TopBar/tl.gif) 0 0 no-repeat}
+.tr {background: url(core/themeCP/Bitrix/CssImage/TopBar/tr.gif) 100% 0 no-repeat; padding:5px 15px 5px 15px; font-weight:bold ; color: #333333; } 
+
+
+
+.t_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/dot.gif) 0 0 repeat-x;  }
+.l_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/dot.gif) 0 0 repeat-y}
+.r_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/dot.gif) 100% 0 repeat-y}
+/*.bl_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/bl.gif) 0 100% no-repeat}
+.br_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/br.gif) 100% 100% no-repeat}*/
+.tl_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/tl.gif) 0 0 no-repeat}
+.tr_dent {background: url(core/themeCP/Bitrix/CssImage/TopBar/btn_dent/tr.gif) 100% 0 no-repeat; padding:5px 15px 2px 15px;font-weight:bold ; color:#474747;} 
+
+
+.topbar
+{
+    
+    background-image: url('core/themeCP/Bitrix/CssImage/TopBar/bg.gif'); height:52px; width:100%; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e8e8e8;
+    
+    }
+    
+    .toolbar2
+    
+    {
+        background-image: url('core/themeCP/Bitrix/CssImage/TopBar/bg2.gif'); height:78px; width:100%; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cfcfca; text-align:left
+        
+    }
+
+
+/*win1*/
+.CPWin1t_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/tb/t.gif) 0 0 repeat-x; direction:rtl; font-size:10pt; font-weight:bold ; color:#555556 ; text-align:right ; margin:10px 0px  0px 0px  }
+/*
+.Win1b_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/dot.gif) 0 100% repeat-x}
+
+.Win1l_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/dot.gif) 0 0 repeat-y}
+.Win1r_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/dot.gif) 100% 0 repeat-y}
+.Win1bl_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/bl.gif) 0 100% no-repeat}
+.Win1br_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/br.gif) 100% 100% no-repeat}*/
+.CPWin1tl_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/tb/tl.gif) 0 0 no-repeat}
+.CPWin1tr_tb {background: url(core/themeCP/Bitrix/CssImage/Win1/tb/tr.gif) 100% 0 no-repeat; padding:5px;height:21px}
+
+.CPWin1t {background: url(core/themeCP/Bitrix/CssImage/Win1/t11.gif) 0 0 repeat-x; background-color:#f8f9fc;  margin:0px  0px   0px 0px;  text-align:right ; direction:rtl }
+.CPWin1b {background: url(core/themeCP/Bitrix/CssImage/Win1/b.gif) 0 100% repeat-x; }
+.CPWin1l {background: url(core/themeCP/Bitrix/CssImage/Win1/l.gif) 0 0 repeat-y; }
+.CPWin1r {background: url(core/themeCP/Bitrix/CssImage/Win1/r.gif) 100% 0 repeat-y;}
+.CPWin1bl {background: url(core/themeCP/Bitrix/CssImage/Win1/bl.gif) 0 100% no-repeat;}
+.CPWin1br {background: url(core/themeCP/Bitrix/CssImage/Win1/br.gif) 100% 100% no-repeat; }
+.CPWin1tl {background: url(core/themeCP/Bitrix/CssImage/Win1/tl1.gif) 0 0 no-repeat; }
+.CPWin1tr {    background: url(core/themeCP/Bitrix/CssImage/Win1/tr1.gif) 100% 0 no-repeat;     padding:10px ; }
+
+
+.CPWin1t_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/t.gif) 0 0 repeat-x; direction:rtl; text-align:right ; margin:0px 0px  20px 0px  }
+/*
+.Win1b_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/dot.gif) 0 100% repeat-x}
+*/
+.CPWin1l_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/l.gif) 0 0 repeat-y; }
+.CPWin1r_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/r.gif) 100% 0 repeat-y;}
+.CPWin1bl_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/bl.gif) 0 100% no-repeat;}
+.CPWin1br_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/br.gif) 100% 100% no-repeat; }
+.CPWin1tl_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/tl.gif) 0 0 no-repeat}
+.CPWin1tr_bb {background: url(core/themeCP/Bitrix/CssImage/Win1/bb/tr.gif) 100% 0 no-repeat; padding:5px;height:29px}
+
+
+/* button  */
+
+.Cpbtn
+{
+   font-family:Tahoma;
+   font-size:10pt;   
+}
+
+
+
+.ve_div
+{
+   border: 1px dashed #FF0000;
+
+}
+
+.ve_btn
+{
+    width: 26px;
+    height: 25px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+     z-index:99; 
+}
+
+/*************form ****/
+
+/*p, h1, form, 
+ ----------- My Form ----------- */
+ button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+ 
+.myform{
+margin:0 auto;
+width:500px;
+padding:14px;
+}
+
+
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#stylized .btnSS{
+background:#666666;
+color:#FFFFFF;
+font-size:9pt;
+font-weight:bold;
+margin-left:150px;
+/*
+clear:both;
+
+width:125px;
+height:31px;
+text-align:center;
+line-height:31px;
+
+
+*/
+}
+
+body 
+{
+    font:tahoma;
+}
+input.button { 
+	margin: 0; 
+	font: bolder 12px tahoma; 
+	border: 1px solid #CCC; 
+	padding: 2px 3px; 
+	background:#C00000;
+	color:  White ;
+}
+input.Txt_Disable 
+{
+     
+     font-family:Tahoma;
+     width:430px;
+          
+}
+
+input.Txt_Edit 
+{
+     
+     font-family:Tahoma;
+     width:430px;
+          
+}
+
+.main_desktop_item
+{
+      
+   
+       font-size:8pt;
+       color:Black;
+     text-align: center;
+          
+}
+
+.from_txt{
+  font-family:Tahoma;
+  font-size:10pt;        
+                
+}
+.from_div_title{
+  font-family:Tahoma;
+  font-size:10pt; 
+     WIDTH: 300px;
+      HEIGHT: 34px   ;
+      
+       
+                
+}
+.from_div_maintitle 
+{
+    MARGIN-TOP: 15px;
+    FLOAT: left; 
+    MARGIN-LEFT: 5px;
+    WIDTH: 150px;
+    HEIGHT: 26px;
+    font-size:11pt;
+    
+    }
+    
+    
+    
+    /* new cp with tab */
+.row 
+{
+ overflow: hidden ; margin-top:10px    
+}
+
+.field
+{
+   font-size:9pt ; width:250px; float:right ; text-align:left ; margin-left:5px;
+   color:#646465;
+}
+
+
+
+
+
+
+/*Form Builder*/
+
+.formbuilder .fieldInputArea
+{
+    width:550px;float:right ;   
+}
+
+.formbuilder .tabArea
+{
+  width:330px; float:right ; text-align:left ; margin-left:15px;
+}
+
+.formbuilder .fieldBorder
+{
+  
+  border: 1px solid white;
+  
+    margin-bottom: 8px;
+    padding: 5px;
+    line-height: 140%;
+     width:550px;
+     margin-right:5px;
+  
+}
+
+.formbuilder .fieldBorder:hover
+{
+    background-position: left top;
+    border: 1px dotted #5f7eb2;
+    
+    background-image: url('core/themeCP/Bitrix/CssImage/ve/edit.gif') ; 
+    background-repeat: no-repeat;
+}
+
+.formbuilder .fieldBorder_Clicked
+{
+    background-color: #f3f7fb;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    color: #1a5bb2;
+    position: relative;
+    z-index: auto;
+    left: auto;
+}
+
+.formbuilder .fieldBorder_Clicked:hover
+{
+
+     border: 1px dotted #5f7eb2;
+
+}
+
+.formbuilder .fieldBorderBtns
+{    
+     /*set the div in the bottom right corner*/
+     /* display:block;   */
+      /*   position:absolute;    bottom:0;    left:0;    width:350px;      */
+       margin-top :10px;
+    
+}
+
+
+
+
+.formbuilder .fieldInputArea
+{
+    width:580px;float:right; 
+}
+
+.formbuilder .divAddField:hover
+{
+  
+}
+
+.formbuilder .divAddField
+{
+ width:352px
+}
+
+.formbuilder .btnAddField
+{
+      width: 140px; overflow:hidden; float:right; 
+ background-color: #ebedf7 ; border: 1px solid #d3d3d3;  cursor:pointer ;
+  -moz-user-select: -moz-none;    -khtml-user-select: none;    -webkit-user-select: none;    -o-user-select: none;    user-select: none; 
+  margin-bottom:10px; margin-left:10pt;
+  height:30px;
+}
+
+.formbuilder .btnAddField:hover
+{
+  background-color: #dfe1ec ; border: 1px solid #999999;    cursor:pointer ;
+
+} 
+
+.formbuilder .btnAddFieldCaption
+{
+    float: right; font-weight: bold; padding-top: 8px;  font-size:8pt; 
+}
+
+.formbuilder .btnAddFieldImg
+{
+    float: right; width:38px; height:35px; text-align:center;  padding-top:3px
+}
+
+.formbuilder .fieldPropSectionsArea
+{
+     margin-bottom:10px;
+}
+
+
+
+
+.formbuilder .fieldPropSectionsAreaHalf
+{
+ 
+     margin-bottom:10px;
+     width:50%;
+     float:right;
+}
+
+.formbuilder .fieldPropElements_DdlFieldSize
+{
+      width:100px;
+}
+
+
+.formbuilder .fieldPropElements_Txt_DefValue
+{
+      width:98%;
+}
+
+.formbuilder .fieldPropElements_Txt_guidelines
+{
+      width:98%;
+      height:50px
+}
+
+
+#fieldProprtiesArea
+{
+   overflow:hidden;
+}
+
+.formbuilder .Element_TextBox_small
+{
+     width:125px;
+}
+
+.formbuilder .Element_TextBox_medium
+{
+     width:250px;
+}
+
+.formbuilder .Element_TextBox_large 
+{
+     width:500px;
+}
+
+    
+.formbuilder   .regStar
+{
+  color:Red;   
+   display:none;
+    
+}
+
+
+.tooltipA
+{
+    text-decoration:none;
+    cursor:help;
+}
+
+.tagit-new
+{
+    direction:ltr;
+}
+
+.tagit ui-widget ui-widget-content ui-corner-all
+{
+     background-color:White;
+}
+
+
+
+/***********************show form********************************/
+
+    .fb_row
+{
+    
+    direction: rtl;
+    text-align: right;
+    padding: 5px 20px 5px 20px;
+    line-height: 150%;
+}
+
+.tooltipA {
+    cursor: help;
+    text-decoration: none;
+}
+
+.Element_TextBox_small
+{
+     width:125px;
+}
+
+ .Element_TextBox_medium
+{
+     width:250px;
+}
+
+ .Element_TextBox_large 
+{
+     width:500px;
+}
+
+
+
+.ModalPopupBG
+{
+	background-color: #5b5e64;
+	filter: alpha(opacity=50);
+	opacity: 0.7;
+}
+
+.txt_dialog_small_rtl
+{
+     font-family:Tahoma;
+     direction:rtl ;
+      font-size:10pt;
+     
+}
+
+.txt_dialog_medium_rtl
+{
+    font-family:Tahoma;
+    direction:rtl ;
+      font-size:10pt;
+    
+     width:145px;   
+}
+
+.txt_dialog_large_rlt
+{
+    font-family:Tahoma;
+    direction:rtl ;
+      font-size:10pt;
+    
+     width:280px;
+}
+
+.txt_dialog_small_ltr
+{
+     font-family:Tahoma;
+     direction:ltr ;
+      font-size:10pt;
+     
+}
+
+.txt_dialog_medium_ltr
+{
+    font-family:Tahoma;
+    direction:ltr ;
+     width:145px;   
+    
+}
+
+.txt_dialog_large_ltr
+{
+    font-family:Tahoma;
+    direction:ltr ;
+      font-size:10pt;
+    
+}
+
+
+
+.DataRow:hover
+{
+    background-color: #E0E9EC;
+}
+ 
+ .DataRowAlt:hover
+ {
+     background-color:#E0E9EC;
+ }
+
+ .DataRowAlt
+ {
+     background-color:#f5f9f9;
+ }
+ 
+ 
+ .gridView tr:nth-child(even) {background-color: #FFF}
+.gridView tr:nth-child(odd) {background-color: #FFCC00}
+
+.sortasc-header A 
+{ 
+   background:url('core/themeCP/Bitrix/CssImage/btn/arrow_down.gif') right center no-repeat;   
+}
+
+.sortdesc-header A
+{
+   background:url('core/themeCP/Bitrix/CssImage/btn/arrow_up.gif') right center no-repeat;
+ 
+   
+}
+
+TH A
+{
+   padding-right: 20px;
+} 
+
+.grid .datatable TH.sortasc-header A { background:url(../img/asc.gif) right center no-repeat; }
+.grid .datatable TH.sortdesc-header A { background:url(../img/desc.gif) right center no-repeat; }
+.grid .datatable .sortasc-header { background-color: #fffacd; }
+.grid .datatable .sortdesc-header { background-color: #fffacd; }
+
+.sortasc-header
+{
+    background: url('core/themeCP/Bitrix/CssImage/btn/gvHeaderbg.gif') repeat-x top;
+    border-width: 3px;
+    border-color: #2d2e32;
+    background-color: #828c93;
+    border-top-style: solid;
+}
+
+
+
+.sortdesc-header
+{
+       background: url('core/themeCP/Bitrix/CssImage/btn/gvHeaderbg.gif') repeat-x top;
+
+    border-width:3px;
+    border-color: #2d2e32;
+    background-color: #828c93;
+    border-top-style: solid;
+}
+
+.cell-header th
+{
+   
+    border-width:1px;
+    border-color: #d9e0e4;
+   
+    border-top-style: solid;
+}

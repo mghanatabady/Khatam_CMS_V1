@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localization>
+  <string id="Authorization">رخصة</string>
+  <string id="pleaseAuthorize">يرجى تأذن</string>
+  <string id="UserName">اسم الدخول</string>
+  <string id="Password">كلمة السر</string>
+  <string id="RememberMeOnthisComputer">تذكرني على هذا الكمبيوتر</string>
+  <string id="Authorize">موافق</string>
+  <string id="ForgotYourPassword">نسيت كلمة السر؟</string>
+  <string id="BackToLoginPage">العودة إلى صفحة تسجيل الدخول</string>
+  <string id="Gotothe">انتقل إلى</string>
+  <string id="requestPasswordForm">طلب كلمة السر</string>
+  <string id="CAPTCHAcode">الأحرف في الصورة</string>
+  <string id="IncorrectCAPTCHAcodeEntered">الأحرف في الصورة خطأ في</string>
+  <string id="UsernameOrPasswordIsWrong">كلمة السر أو اسم الدخول غير صحيح</string>
+  <string id="PleaseInsertUsername">يرجى كتابة اسم الدخول </string>
+  <string id="PleaseInsertPassword">يرجى كتابة كلمة السر</string>
+  <string id="PleaseInsertCaptcha">الأحرف في الصورة</string>
+  <string id="PasswordRecovery">كلمة السر الانتعاش</string>
+  <string id="Email">البريد الإلكتروني</string>
+  <string id="EmailSentOD">وقد تم ارسال البريد إلى البريد الخاص بك ، مع تفاصيل كلمة السر الخاصة بك.</string>
+  <string id="Send">إرسال</string>
+  <string id="UserNotFound">لم يتم العثور على المستخدم</string>
+  <string id="resendActivationEmail">إعادة إرسال طلب التنشيط</string>
+  <string id="EmailNotActive">البريد الالكتروني غير نشط، راجع البريد الإلكتروني تفعيل أرسلت لك في وقت تسجيل أو الذهاب إلى العنوان التالي، لإرسال البريد الإلكتروني التنشيط مرة أخرى:</string>
+  <string id="ErrorUserWasActive">وقد تم بالفعل اسم المستخدم تفعيلها</string>
+  <string id="EmailSentActivation">لقد تم ارسال التفعيل</string>
+  <string id="ActivationProcessWasSuccessful">وكانت عملية التنشيط بنجاح</string>
+  <string id="Errorinactivationoperation">خطأ في تفعيل عملية</string>
+  <string id="uniStudentId">الهوية طالب</string>
+  <string id="student">طالب</string>
+  <string id="Employee">عامل</string>
+  <string id="UniversityTeachers">أساتذة الجامعات</string>
+
+
+
+</localization>

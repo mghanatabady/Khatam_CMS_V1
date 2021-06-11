@@ -1,0 +1,2012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="46f29867-a642-4718-b6e6-b8624dadb0e0"
+  name="KhatamModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="ac54c9d3-6e7c-40d9-9a65-a6d81aa29a24">
+      <body>پست خرید
+اتوبوس
+آژانس</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="341d4136-e672-4ad7-881b-117c18641fb0"
+        name="customer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="0882ed19-fa34-4c73-ab1a-efb37ccdb231"
+        name="shopSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="87b9ed93-e63f-428c-ae6b-951269e89dad"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="dbc2cb12-06ed-4a4b-b30e-8772fcc98736"
+                LastKnownName="showProduct()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fa3d2782-a06c-4c0a-a451-58cc4c1ea76d"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="681c096d-8f26-43bd-b3cf-162ba442fdad"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="21066e7a-3fc1-41f1-93e0-c8f89c8397aa"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cfbd912b-6014-48d5-8a37-fb625128700f"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="681c096d-8f26-43bd-b3cf-162ba442fdad"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1fe7c857-c762-4341-9eab-79f808cd5d51"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="dbc2cb12-06ed-4a4b-b30e-8772fcc98736"
+                LastKnownName="showProduct()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="347099e4-4462-4bde-a7c3-957ae8a788ca"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="02e64104-f312-4ec8-9f1a-2e0bc4278cc9"
+                LastKnownName="customer : customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="21066e7a-3fc1-41f1-93e0-c8f89c8397aa"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="dbc2cb12-06ed-4a4b-b30e-8772fcc98736"
+                LastKnownName="showProduct()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="56b098c9-3802-4aa2-8153-024325ae3bd1"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cb4516e0-ddc8-4abc-84b7-1e76ec442ad6"
+                LastKnownName="changeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3cb0695e-3a72-4606-9bcd-2dba70e94ca5"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1df5fda5-4789-4c11-8b85-1418d4e156f0"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b6859231-96e4-465b-a1ad-55759ef6b3de"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="67c50c9f-db0a-44a8-9085-74f2703884b9"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1df5fda5-4789-4c11-8b85-1418d4e156f0"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cc22e1c1-c057-4b5c-b7a4-c581c1ee21f0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cb4516e0-ddc8-4abc-84b7-1e76ec442ad6"
+                LastKnownName="changeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cfbd912b-6014-48d5-8a37-fb625128700f"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="dbc2cb12-06ed-4a4b-b30e-8772fcc98736"
+                LastKnownName="showProduct()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b6859231-96e4-465b-a1ad-55759ef6b3de"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="cb4516e0-ddc8-4abc-84b7-1e76ec442ad6"
+                LastKnownName="changeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e5b512b6-1b7d-4ffd-aa8e-7f77a39a6e7e"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e59e9b09-e4d5-4ef2-8bf1-6f0e62a7fc87"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e7a9d56c-cbdc-4f38-a403-c01c61ea631a"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f1b1de3e-2943-4301-a60e-1bc0bac5fa2a"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3ae79a52-b307-47cc-aa9a-ad5613b5aa4b"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="12b1e54f-2a05-4d73-8e24-8137a64b4c0b"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="79de06e3-99ba-432f-ad32-2f6559502ba8"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="fa3d2782-a06c-4c0a-a451-58cc4c1ea76d"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="aac4f769-87f3-4bb9-9f94-d6e61ee696fc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="dbc2cb12-06ed-4a4b-b30e-8772fcc98736"
+                LastKnownName="showProduct()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e7a9d56c-cbdc-4f38-a403-c01c61ea631a"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="99687030-8ddc-4598-bb16-de454417629b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="67c50c9f-db0a-44a8-9085-74f2703884b9"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="cb4516e0-ddc8-4abc-84b7-1e76ec442ad6"
+                LastKnownName="changeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f1b1de3e-2943-4301-a60e-1bc0bac5fa2a"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b8fb42e7-214e-442d-b8c4-c483d4d9ad57"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f44f0942-d0df-4433-a24a-07624967e422"
+                LastKnownName="showAddToshopCartbtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e72701cb-7800-40b6-b502-c6026c4f741f"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="68e32e57-ecbf-4c73-98fa-c0a784e92af2"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4950acfc-f386-465c-beb9-d7a39fc16fe2"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="229d2457-53af-439a-84d8-28da30cb19aa"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="68e32e57-ecbf-4c73-98fa-c0a784e92af2"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e3960107-9ce3-4c8a-844d-45942b05afbc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f44f0942-d0df-4433-a24a-07624967e422"
+                LastKnownName="showAddToshopCartbtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3ae79a52-b307-47cc-aa9a-ad5613b5aa4b"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4950acfc-f386-465c-beb9-d7a39fc16fe2"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="f44f0942-d0df-4433-a24a-07624967e422"
+                LastKnownName="showAddToshopCartbtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="cb1eee3a-c023-4be5-b7fe-5c7f17a8f824"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1a944bc4-9a69-4a92-afd3-09d2ee50342c"
+                LastKnownName="showAddedToShhopCartLink"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2ceb8f0a-9056-421e-937f-6baaabdf2035"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ee749236-e960-48db-8d36-bd22ebda187f"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d036c13-fdbd-4ae9-ac77-d1ada0a2bd32"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ee749236-e960-48db-8d36-bd22ebda187f"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4153a07a-bb6f-4500-b431-bc655b5c76b7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1a944bc4-9a69-4a92-afd3-09d2ee50342c"
+                LastKnownName="showAddedToShhopCartLink"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="229d2457-53af-439a-84d8-28da30cb19aa"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="f44f0942-d0df-4433-a24a-07624967e422"
+                LastKnownName="showAddToshopCartbtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8d036c13-fdbd-4ae9-ac77-d1ada0a2bd32"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="1a944bc4-9a69-4a92-afd3-09d2ee50342c"
+                LastKnownName="showAddedToShhopCartLink"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3cb0695e-3a72-4606-9bcd-2dba70e94ca5"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="975def39-b048-446b-8d1e-4e0a9183d8a0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cb4516e0-ddc8-4abc-84b7-1e76ec442ad6"
+                LastKnownName="changeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e7cafd51-9b84-4577-a703-6bd8c24217e5"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2f842fa5-3aca-4202-8f16-c09df7a6e52f"
+                LastKnownName="showPreInvoicebtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="cb741e9b-155d-47ec-8954-24c5617157b7"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9d709b5f-1343-4a3f-a740-abdac801399c"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="aa84cb46-016e-4970-a971-efee8f5f6256"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9d709b5f-1343-4a3f-a740-abdac801399c"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a9178e58-2f9d-40f8-93f2-849dd2b4941c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2f842fa5-3aca-4202-8f16-c09df7a6e52f"
+                LastKnownName="showPreInvoicebtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="aa84cb46-016e-4970-a971-efee8f5f6256"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="2f842fa5-3aca-4202-8f16-c09df7a6e52f"
+                LastKnownName="showPreInvoicebtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="12b1e54f-2a05-4d73-8e24-8137a64b4c0b"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e72701cb-7800-40b6-b502-c6026c4f741f"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="21996f52-e64b-45e9-91bc-04468cf81043"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f44f0942-d0df-4433-a24a-07624967e422"
+                LastKnownName="showAddToshopCartbtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2ceb8f0a-9056-421e-937f-6baaabdf2035"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0da18cd4-4c22-42a8-b3ac-34a610a61755"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1a944bc4-9a69-4a92-afd3-09d2ee50342c"
+                LastKnownName="showAddedToShhopCartLink"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="cb741e9b-155d-47ec-8954-24c5617157b7"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9b34612b-0949-46ab-9379-34edeb0f5858"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2f842fa5-3aca-4202-8f16-c09df7a6e52f"
+                LastKnownName="showPreInvoicebtn()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="122d966c-362f-4ca1-9894-e34b03667c36"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ae1291fb-5bb9-468e-8b75-b8934d4b8404"
+                LastKnownName="showContactUsMessage()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="7dd920e1-095d-4473-b7d2-adddcadc1047"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0128779e-333e-47fb-89f0-ec5d9ad8f67c"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="98d3727f-4281-451a-b8d3-c43b4bd3d21f"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0128779e-333e-47fb-89f0-ec5d9ad8f67c"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fa6bfb05-23e7-4140-89c2-e904720dfea7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ae1291fb-5bb9-468e-8b75-b8934d4b8404"
+                LastKnownName="showContactUsMessage()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="79de06e3-99ba-432f-ad32-2f6559502ba8"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="98d3727f-4281-451a-b8d3-c43b4bd3d21f"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="ae1291fb-5bb9-468e-8b75-b8934d4b8404"
+                LastKnownName="showContactUsMessage()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e59e9b09-e4d5-4ef2-8bf1-6f0e62a7fc87"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6482cca1-e22a-4730-a902-a9206df4f05d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+                LastKnownName="checkSellTerms()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="7dd920e1-095d-4473-b7d2-adddcadc1047"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="72acb436-7a90-437c-a934-949ad4d2eba6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ae1291fb-5bb9-468e-8b75-b8934d4b8404"
+                LastKnownName="showContactUsMessage()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="02e64104-f312-4ec8-9f1a-2e0bc4278cc9"
+            name="customer : customer"
+            isActor="true"
+            lifelineDisplayName="customer : customer">
+            <represents>
+              <propertyMoniker
+                Id="7dcb2440-e2a1-4732-9b73-dfed11fbd779"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="347099e4-4462-4bde-a7c3-957ae8a788ca"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="dbc2cb12-06ed-4a4b-b30e-8772fcc98736"
+            name="showProduct()"
+            isActor="false"
+            lifelineDisplayName="showProduct()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="681c096d-8f26-43bd-b3cf-162ba442fdad"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fa3d2782-a06c-4c0a-a451-58cc4c1ea76d"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="cb4516e0-ddc8-4abc-84b7-1e76ec442ad6"
+            name="changeQuantity()"
+            isActor="false"
+            lifelineDisplayName="changeQuantity()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="1df5fda5-4789-4c11-8b85-1418d4e156f0"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3cb0695e-3a72-4606-9bcd-2dba70e94ca5"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="eb1d45eb-047b-4c7e-afe5-34cc1e95e9bb"
+            name="checkSellTerms()"
+            isActor="false"
+            lifelineDisplayName="checkSellTerms()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e7a9d56c-cbdc-4f38-a403-c01c61ea631a"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e59e9b09-e4d5-4ef2-8bf1-6f0e62a7fc87"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="f44f0942-d0df-4433-a24a-07624967e422"
+            name="showAddToshopCartbtn()"
+            isActor="false"
+            lifelineDisplayName="showAddToshopCartbtn()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="68e32e57-ecbf-4c73-98fa-c0a784e92af2"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e72701cb-7800-40b6-b502-c6026c4f741f"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2f842fa5-3aca-4202-8f16-c09df7a6e52f"
+            name="showPreInvoicebtn()"
+            isActor="false"
+            lifelineDisplayName="showPreInvoicebtn()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="9d709b5f-1343-4a3f-a740-abdac801399c"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cb741e9b-155d-47ec-8954-24c5617157b7"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ae1291fb-5bb9-468e-8b75-b8934d4b8404"
+            name="showContactUsMessage()"
+            isActor="false"
+            lifelineDisplayName="showContactUsMessage()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="0128779e-333e-47fb-89f0-ec5d9ad8f67c"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7dd920e1-095d-4473-b7d2-adddcadc1047"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="1a944bc4-9a69-4a92-afd3-09d2ee50342c"
+            name="showAddedToShhopCartLink"
+            isActor="false"
+            lifelineDisplayName="showAddedToShhopCartLink">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ee749236-e960-48db-8d36-bd22ebda187f"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2ceb8f0a-9056-421e-937f-6baaabdf2035"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="1786b3ed-0d43-42aa-bafb-7dae0e13601b"
+            name="نمایش صفحه محصول"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="347099e4-4462-4bde-a7c3-957ae8a788ca"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="21066e7a-3fc1-41f1-93e0-c8f89c8397aa"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="df6df9c1-3a6d-4c99-88c8-0a96c7acf5f9"
+            name="تغییر تعداد محصول"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cfbd912b-6014-48d5-8a37-fb625128700f"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b6859231-96e4-465b-a1ad-55759ef6b3de"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="182372ec-e972-4cbf-8f7e-3d4987bda615"
+            name="isValidNumber()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="67c50c9f-db0a-44a8-9085-74f2703884b9"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f1b1de3e-2943-4301-a60e-1bc0bac5fa2a"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="00cef8e6-a7c4-42f1-823f-0badf579a642"
+            name="isValidToshopCart()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3ae79a52-b307-47cc-aa9a-ad5613b5aa4b"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4950acfc-f386-465c-beb9-d7a39fc16fe2"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b067e961-39b6-41c7-bf0a-c6505356a18d"
+            name="isValidToOnlineOrderFrom()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="12b1e54f-2a05-4d73-8e24-8137a64b4c0b"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aa84cb46-016e-4970-a971-efee8f5f6256"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9908d17e-8bbb-4a0f-bd81-3e71376a25a5"
+            name="IsNotValidForOnlineSellSystem()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="79de06e3-99ba-432f-ad32-2f6559502ba8"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="98d3727f-4281-451a-b8d3-c43b4bd3d21f"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4ec5ae6a-8ed2-4188-b53b-2274351fe8c4"
+            name="onclick()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="229d2457-53af-439a-84d8-28da30cb19aa"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d036c13-fdbd-4ae9-ac77-d1ada0a2bd32"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="7dcb2440-e2a1-4732-9b73-dfed11fbd779"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="341d4136-e672-4ad7-881b-117c18641fb0"
+                LastKnownName="customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1fe7c857-c762-4341-9eab-79f808cd5d51"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="aac4f769-87f3-4bb9-9f94-d6e61ee696fc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cc22e1c1-c057-4b5c-b7a4-c581c1ee21f0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="975def39-b048-446b-8d1e-4e0a9183d8a0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="99687030-8ddc-4598-bb16-de454417629b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6482cca1-e22a-4730-a902-a9206df4f05d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e3960107-9ce3-4c8a-844d-45942b05afbc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="21996f52-e64b-45e9-91bc-04468cf81043"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a9178e58-2f9d-40f8-93f2-849dd2b4941c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9b34612b-0949-46ab-9379-34edeb0f5858"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fa6bfb05-23e7-4140-89c2-e904720dfea7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="72acb436-7a90-437c-a934-949ad4d2eba6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4153a07a-bb6f-4500-b431-bc655b5c76b7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0da18cd4-4c22-42a8-b3ac-34a610a61755"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="bc803904-8fbb-44ea-8933-c61e0e6e41a4"
+        name="UMLSequenc_OnlineOrderForm"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="5f0390fe-c1f2-4ff0-9547-8dec2610ab71"
+            name="customer : customer"
+            isActor="true"
+            lifelineDisplayName="customer : customer">
+            <represents>
+              <propertyMoniker
+                Id="50060969-eb74-4219-97cc-c206518f844d"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <ownedAttributesInternal>
+          <property
+            Id="50060969-eb74-4219-97cc-c206518f844d"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="341d4136-e672-4ad7-881b-117c18641fb0"
+                LastKnownName="customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="8c9efef4-eb02-4862-a853-ca49a35a5206"
+        name="UMLSequence_shopcart"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="80b5a3bf-2486-4b35-b3b5-353d215fb351"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="709cee1d-047b-4555-8bbc-786f8c69e289"
+                LastKnownName="customer : customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d7e5c512-0885-4dc3-bc54-ba8efe6bbd90"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="e048564c-028e-49d0-8456-e43e77de475d"
+                LastKnownName="showLoginForm()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ba75668d-ddb2-4c8e-8c8e-e3eb8bee7971"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="5ff53302-8ab2-48da-b362-9dc7a9ec435c"
+                LastKnownName="show_transport_mode()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1ac946b7-9e8a-4a99-846d-70680032b82f"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="806c2abe-f72f-4439-9f06-876f7cd68ba6"
+                LastKnownName="ShopCartRowDel()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0752eea2-f1e5-47e4-8adc-aa25fab3f98e"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="5ff53302-8ab2-48da-b362-9dc7a9ec435c"
+                LastKnownName="show_transport_mode()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="57f67907-b124-4af3-ba58-c2f948bcb08e"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="e048564c-028e-49d0-8456-e43e77de475d"
+                LastKnownName="showLoginForm()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="53796686-ee51-44f3-8494-2d22017ca781"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="e048564c-028e-49d0-8456-e43e77de475d"
+                LastKnownName="showLoginForm()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="617e67a1-dfc7-4da3-b5dc-c798d09c4966"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="806c2abe-f72f-4439-9f06-876f7cd68ba6"
+                LastKnownName="ShopCartRowDel()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="eae3cb9a-b48c-4d02-b630-34dc7dded671"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="709cee1d-047b-4555-8bbc-786f8c69e289"
+                LastKnownName="customer : customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="be717c91-5633-49db-a3ca-67bdf3d11a9e"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="ae6e627e-241a-4696-a080-9c26d4fdfa90"
+                LastKnownName="shopCartChangeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2bd8b079-25c9-4bfb-9b4f-6d9657194102"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="709cee1d-047b-4555-8bbc-786f8c69e289"
+                LastKnownName="customer : customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9aefc401-778a-49c8-b0eb-48119926aca1"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="709cee1d-047b-4555-8bbc-786f8c69e289"
+                LastKnownName="customer : customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a203a0bd-6ca7-43db-82ac-1271842bdb0d"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="ae6e627e-241a-4696-a080-9c26d4fdfa90"
+                LastKnownName="shopCartChangeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="58edab86-317f-4cf5-a1b6-77f094b6bc23"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="709cee1d-047b-4555-8bbc-786f8c69e289"
+                LastKnownName="customer : customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d405c2ef-5fd0-45c3-9cad-081c59208525"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ae6e627e-241a-4696-a080-9c26d4fdfa90"
+                LastKnownName="shopCartChangeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fa1e59df-963b-4b36-a268-616c54595b0b"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="afe76ee7-6af5-43a4-b177-bed8eb60fb82"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="be717c91-5633-49db-a3ca-67bdf3d11a9e"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a203a0bd-6ca7-43db-82ac-1271842bdb0d"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="afe76ee7-6af5-43a4-b177-bed8eb60fb82"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ac030a57-4e54-457c-8ec0-ae980c1c09f3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ae6e627e-241a-4696-a080-9c26d4fdfa90"
+                LastKnownName="shopCartChangeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fa1e59df-963b-4b36-a268-616c54595b0b"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="60f42b69-9b65-402a-ba09-84566565c17a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ae6e627e-241a-4696-a080-9c26d4fdfa90"
+                LastKnownName="shopCartChangeQuantity()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1bdc12e9-0913-4643-a8f1-008ef4d6e00e"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="806c2abe-f72f-4439-9f06-876f7cd68ba6"
+                LastKnownName="ShopCartRowDel()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="cc36fb44-dc7b-474d-81c8-a2ee4dae5f21"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="146ef1b6-c98e-44d2-8311-b2155abca2f6"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1ac946b7-9e8a-4a99-846d-70680032b82f"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="617e67a1-dfc7-4da3-b5dc-c798d09c4966"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="146ef1b6-c98e-44d2-8311-b2155abca2f6"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ab7d2f5b-5b21-40f0-9f39-85047429d312"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="806c2abe-f72f-4439-9f06-876f7cd68ba6"
+                LastKnownName="ShopCartRowDel()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ad58d325-453e-401a-8c55-9ae7b32f010a"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5ff53302-8ab2-48da-b362-9dc7a9ec435c"
+                LastKnownName="show_transport_mode()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="98095017-7600-4d6a-a752-99ef0a52a31c"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="10b89148-54c9-4cd3-bde0-b20d225ff204"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0752eea2-f1e5-47e4-8adc-aa25fab3f98e"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ba75668d-ddb2-4c8e-8c8e-e3eb8bee7971"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="10b89148-54c9-4cd3-bde0-b20d225ff204"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ae42cb27-7d6b-42dd-bd2d-30ec7b5e4685"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5ff53302-8ab2-48da-b362-9dc7a9ec435c"
+                LastKnownName="show_transport_mode()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="cc36fb44-dc7b-474d-81c8-a2ee4dae5f21"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="77b9e043-5e43-4e3b-bee4-ac2d9209c89c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="806c2abe-f72f-4439-9f06-876f7cd68ba6"
+                LastKnownName="ShopCartRowDel()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="98095017-7600-4d6a-a752-99ef0a52a31c"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cbea33e6-a702-4489-87a9-95a440b7119b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5ff53302-8ab2-48da-b362-9dc7a9ec435c"
+                LastKnownName="show_transport_mode()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="82952a33-f3bf-4548-a87b-68078b84abbb"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e048564c-028e-49d0-8456-e43e77de475d"
+                LastKnownName="showLoginForm()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ff33c370-624b-4be3-8a74-8cd9aa46cfc0"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e61995f1-560e-4286-b29e-a70a7c48b992"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="57f67907-b124-4af3-ba58-c2f948bcb08e"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e61995f1-560e-4286-b29e-a70a7c48b992"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2fa61b0d-360d-429a-9fc8-db13a9e7189e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e048564c-028e-49d0-8456-e43e77de475d"
+                LastKnownName="showLoginForm()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ff33c370-624b-4be3-8a74-8cd9aa46cfc0"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3fdb80c5-d525-4ab3-b9fb-3b0ec75d18ab"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="KhatamModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e048564c-028e-49d0-8456-e43e77de475d"
+                LastKnownName="showLoginForm()"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="709cee1d-047b-4555-8bbc-786f8c69e289"
+            name="customer : customer"
+            isActor="true"
+            lifelineDisplayName="customer : customer">
+            <represents>
+              <propertyMoniker
+                Id="cd3f437e-68ae-4c33-abd4-b90b490c1370"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9aefc401-778a-49c8-b0eb-48119926aca1"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2bd8b079-25c9-4bfb-9b4f-6d9657194102"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="58edab86-317f-4cf5-a1b6-77f094b6bc23"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="eae3cb9a-b48c-4d02-b630-34dc7dded671"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="80b5a3bf-2486-4b35-b3b5-353d215fb351"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ae6e627e-241a-4696-a080-9c26d4fdfa90"
+            name="shopCartChangeQuantity()"
+            isActor="false"
+            lifelineDisplayName="shopCartChangeQuantity()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="afe76ee7-6af5-43a4-b177-bed8eb60fb82"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fa1e59df-963b-4b36-a268-616c54595b0b"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="806c2abe-f72f-4439-9f06-876f7cd68ba6"
+            name="ShopCartRowDel()"
+            isActor="false"
+            lifelineDisplayName="ShopCartRowDel()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="146ef1b6-c98e-44d2-8311-b2155abca2f6"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cc36fb44-dc7b-474d-81c8-a2ee4dae5f21"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e048564c-028e-49d0-8456-e43e77de475d"
+            name="showLoginForm()"
+            isActor="false"
+            lifelineDisplayName="showLoginForm()">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d7e5c512-0885-4dc3-bc54-ba8efe6bbd90"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="53796686-ee51-44f3-8494-2d22017ca781"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e61995f1-560e-4286-b29e-a70a7c48b992"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ff33c370-624b-4be3-8a74-8cd9aa46cfc0"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5ff53302-8ab2-48da-b362-9dc7a9ec435c"
+            name="show_transport_mode()"
+            isActor="false"
+            lifelineDisplayName="show_transport_mode()">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="10b89148-54c9-4cd3-bde0-b20d225ff204"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="KhatamModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="98095017-7600-4d6a-a752-99ef0a52a31c"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="d0072168-4c7d-461a-812a-455479c439d5"
+            name="setSaleInformation()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9aefc401-778a-49c8-b0eb-48119926aca1"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="be717c91-5633-49db-a3ca-67bdf3d11a9e"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dcc766f1-4e48-4ca8-bc54-70643624b16c"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a203a0bd-6ca7-43db-82ac-1271842bdb0d"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2bd8b079-25c9-4bfb-9b4f-6d9657194102"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6f39d636-c62b-42ea-9ddd-2dde3876cdc5"
+            name="setSaleInformation()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="58edab86-317f-4cf5-a1b6-77f094b6bc23"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1ac946b7-9e8a-4a99-846d-70680032b82f"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e1f78a30-740c-488f-a3f0-29e17ec3a7f8"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="617e67a1-dfc7-4da3-b5dc-c798d09c4966"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="eae3cb9a-b48c-4d02-b630-34dc7dded671"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9b44614f-0dc3-4b97-a09e-81be49595791"
+            name="clickOnNextStepBtn()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80b5a3bf-2486-4b35-b3b5-353d215fb351"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="57f67907-b124-4af3-ba58-c2f948bcb08e"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="98cdca98-ad29-4814-b730-248b134fdb22"
+            name="loginAthourized()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d7e5c512-0885-4dc3-bc54-ba8efe6bbd90"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0752eea2-f1e5-47e4-8adc-aa25fab3f98e"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e892fd90-e49a-4dd4-8111-d4e6e7e6cda3"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ba75668d-ddb2-4c8e-8c8e-e3eb8bee7971"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="53796686-ee51-44f3-8494-2d22017ca781"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="cd3f437e-68ae-4c33-abd4-b90b490c1370"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="341d4136-e672-4ad7-881b-117c18641fb0"
+                LastKnownName="customer"
+                LastKnownLocation="KhatamModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ac030a57-4e54-457c-8ec0-ae980c1c09f3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="60f42b69-9b65-402a-ba09-84566565c17a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ab7d2f5b-5b21-40f0-9f39-85047429d312"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="77b9e043-5e43-4e3b-bee4-ac2d9209c89c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2fa61b0d-360d-429a-9fc8-db13a9e7189e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3fdb80c5-d525-4ab3-b9fb-3b0ec75d18ab"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ae42cb27-7d6b-42dd-bd2d-30ec7b5e4685"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cbea33e6-a702-4489-87a9-95a440b7119b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e794337-d5d2-448e-a379-860686d09b55"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c68476b5-b322-4dcd-a43b-c7246016d952"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b15a85b1-778c-46f4-ac87-c582609856f8"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="876ab266-2222-4a29-8efa-b65a33af9104"
+        name="send_mode"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="21a342be-d295-43b3-880f-484809266b33"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="50390feb-65aa-48a8-814c-ccca7c86e3d3"
+        name="send_mode"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23499c88-3390-49bf-8df5-843fa6da4f7f"
+        name="send_terms"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ac4b3a90-d43d-48b0-97de-524029b70589">
+            <useCaseMoniker
+              Id="50390feb-65aa-48a8-814c-ccca7c86e3d3"
+              LastKnownName="send_mode"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+          <include
+            Id="87572f9c-934f-453a-b800-ba8be122d516">
+            <useCaseMoniker
+              Id="2555a121-426a-44a9-a6e8-57af51ef44a3"
+              LastKnownName="country"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+          <include
+            Id="f2dccbe6-15fe-4159-980c-e2d94907cf0e">
+            <useCaseMoniker
+              Id="ed7e5ba7-bde9-473a-8261-aca1141eadd9"
+              LastKnownName="state"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+          <include
+            Id="474d488c-bd73-4b2a-b881-b38f1a5c50cf">
+            <useCaseMoniker
+              Id="72c96a69-3a94-4fd9-84d4-9fdcec549573"
+              LastKnownName="city"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+          <include
+            Id="4889562a-dfbe-4d73-a73b-9a7d10c01109">
+            <useCaseMoniker
+              Id="7a2e18bf-038d-4df6-8e87-49a2b8c3dfb9"
+              LastKnownName="area"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+          <include
+            Id="4a29c260-60e6-4386-af3f-0b28abd9ba92">
+            <useCaseMoniker
+              Id="822d3cfe-7af0-4031-9cbc-8830fa48c509"
+              LastKnownName="store_source_id"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+          <include
+            Id="9033e49a-6d3e-406d-8f41-2e7413b76200">
+            <useCaseMoniker
+              Id="1210828d-d08f-4f47-9b1c-26dab29f6bba"
+              LastKnownName="source_city_id"
+              LastKnownLocation="KhatamModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ba9f7832-a62d-4b7e-b11c-d20d32d370b2"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2555a121-426a-44a9-a6e8-57af51ef44a3"
+        name="country"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="72c96a69-3a94-4fd9-84d4-9fdcec549573"
+        name="city"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7a2e18bf-038d-4df6-8e87-49a2b8c3dfb9"
+        name="area"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ed7e5ba7-bde9-473a-8261-aca1141eadd9"
+        name="state"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="822d3cfe-7af0-4031-9cbc-8830fa48c509"
+        name="store_source_id"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1210828d-d08f-4f47-9b1c-26dab29f6bba"
+        name="source_city_id"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8a7a3cc1-dac6-403a-87da-b8eef2bdb199"
+        name="sendPay_before_Title"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="269d90d6-9d4f-4b8c-a87a-5fef64c2e73d"
+        name="sendPay_before_price"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="35ea6077-b6b2-4663-9e51-027f8c9c49ab"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3652efc-13aa-4d5e-8f40-2561862d4671"
+        name="sendPay_before_price_unit_id"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ffc29c39-d71a-472a-8ca4-bcf4249b9d2b"
+        name="sendPay_onDelivery_Title"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f44aebd0-e688-4d20-aa0f-9e4d779ba965"
+        name="sendPay_onDelivery_Title_price"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="84ffb9eb-6a13-4c55-aa3b-5a157d834c3c"
+        name="sendPay_onDelivery_unit_Id"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

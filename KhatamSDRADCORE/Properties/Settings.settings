@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KhatamSDRADCORE.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KhatamSDRADCORE_info_webimc_www_ShoppingService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://466.ir/Webservice/SoapServer.php</Value>
+    </Setting>
+    <Setting Name="KhatamSDRADCORE_com_imencms_www_SMSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.imencms.com/sms/sms.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,83 @@
+﻿html
+{
+    background-image: url('CssImage/bg.jpg');
+}
+
+body 
+{
+   font-family:Tahoma;
+ 
+}
+
+
+.infoWin_t {background: url(dot.gif) 0 0 repeat-x; border:1px solid #f1d38b; width: 100%}
+.infoWin_b {background: url(dot.gif) 0 100% repeat-x;border:1px solid #ffffff;}
+.infoWin_l {background: url(dot.gif) 0 0 repeat-y;border:2px solid #fcf4cd;}
+.infoWin_r {background: url(dot.gif) 100% 0 repeat-y}
+.infoWin_bl {background: url(bl.gif) 0 100% no-repeat}
+.infoWin_br {background: url(br.gif) 100% 100% no-repeat}
+.infoWin_tl {background: url(tl.gif) 0 0 no-repeat}
+.infoWin_tr {background: url(tr.gif) 100% 0 no-repeat; padding:10px} 
+
+.footer 
+{
+    font-size:8pt;
+    text-align:center;
+    
+     margin-top:0;
+}
+
+.footerP
+{
+  margin-top:0;
+     margin-bottom: 2px;
+}
+    a:link{color:#0033cc;text-decoration:none;}
+      a:hover{color:#ff6600;text-decoration:none;}
+
+
+   
+
+
+.gridlistrowTemplate
+{
+  
+   
+
+}
+
+.gridlistrowTemplateborder
+{
+    border-spacing: 0; 
+    border-collapse: collapse; 
+    border-style: none none dotted none;
+    border-width: 1px 1px 1px 1px;
+    border-color: #a9b4c3 #a9b4c3 #a9b4c3 #a9b4c3;
+   
+}
+
+.gridlistrowTemplate:hover
+{
+   background-color:#fffae3 ;
+}
+
+
+.WinMaint_tb {background: url(CssImage/WinMain/tb/t.gif) 0 0 repeat-x; width:100%; direction:rtl; text-align:right ; margin:10px 2px  0px 2px  }
+/*
+.WinMainb_tb {background: url(CssImage/WinMain/dot.gif) 0 100% repeat-x}
+
+.WinMainl_tb {background: url(CssImage/WinMain/dot.gif) 0 0 repeat-y}
+.WinMainr_tb {background: url(CssImage/WinMain/dot.gif) 100% 0 repeat-y}
+.WinMainbl_tb {background: url(CssImage/WinMain/bl.gif) 0 100% no-repeat}
+.WinMainbr_tb {background: url(CssImage/WinMain/br.gif) 100% 100% no-repeat}*/
+.WinMaintl_tb {background: url(CssImage/WinMain/tb/tl.gif) 0 0 no-repeat}
+.WinMaintr_tb {background: url(CssImage/WinMain/tb/tr.gif) 100% 0 no-repeat; padding:5px;height:42px}
+
+.WinMaint {background: url(CssImage/WinMain/t.gif) 0 0 repeat-x; width: 100%;margin:0px 2px   0px 2px;  text-align:right ; direction:rtl }
+.WinMainb {background: url(CssImage/WinMain/dot.gif) 0 100% repeat-x; }
+.WinMainl {background: url(CssImage/WinMain/dot.gif) 0 0 repeat-y; }
+.WinMainr {background: url(CssImage/WinMain/dot.gif) 100% 0 repeat-y;}
+.WinMainbl {background: url(CssImage/WinMain/bl.gif) 0 100% no-repeat;}
+.WinMainbr {background: url(CssImage/WinMain/br.gif) 100% 100% no-repeat; }
+.WinMaintl {background: url(CssImage/WinMain/tl.gif) 0 0 no-repeat; }
+.WinMaintr {    background: url(tr.gif) 100% 0 no-repeat;     padding:10px ; }

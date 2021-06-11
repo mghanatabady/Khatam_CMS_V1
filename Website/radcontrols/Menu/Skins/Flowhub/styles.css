@@ -1,0 +1,143 @@
+/* r.a.d.menu Mac skin */
+
+.RadMenu_Flowhub
+{
+	border: solid 1px #dadada;
+	border-bottom: 0px;
+	background: #e9e9e9 url('img/menubg.gif') repeat-x;
+	 height:42px;
+
+
+}
+
+.RadMenu_Flowhub .link
+{
+	text-decoration: none;
+	font-weight: bold;
+	
+		 color:#fffeff;
+	line-height: 42px;
+	background: #e9e9e9 url('img/menubg.gif') repeat-x;
+}
+
+.RadMenu_Flowhub .link:hover,
+.RadMenu_Flowhub .focused,
+.RadMenu_Flowhub .expanded
+{
+	color: #b3e2dc;
+	background: #4291ec url('img/menubghov.gif') repeat-x;
+}
+
+.RadMenu_Flowhub .text
+{
+	font-size: 11px;
+	padding: 0px 9px;
+}
+
+.RadMenu_Flowhub .group
+{
+	background: white url('img/MenuItemBackground.gif');
+	border: solid 1px #dadada;
+}
+
+.RadMenu_Flowhub .group .link
+{
+	background: none;
+	/*width: 140px;*/
+	text-align: right;
+	direction:rtl ;
+	color: #333;
+}
+
+.RadMenu_Flowhub .group .text
+{
+	padding-left: 12px;
+}
+
+.RadMenu_Flowhub .group .link:hover,
+.RadMenu_Flowhub .group .focused,
+.RadMenu_Flowhub .group .expanded
+{
+	background: #326dc8 url('img/MenuItemBackgroundHvr.gif') repeat-x;
+	color: white;
+}
+
+.RadMenu_Flowhub .leftArrow,
+.RadMenu_Flowhub .rightArrow,
+.RadMenu_Flowhub .topArrow,
+.RadMenu_Flowhub .bottomArrow,
+.RadMenu_Flowhub .leftArrowDisabled,
+.RadMenu_Flowhub .rightArrowDisabled,
+.RadMenu_Flowhub .topArrowDisabled,
+.RadMenu_Flowhub .bottomArrowDisabled
+{
+	background: #326dc8 url('img/left.gif') center center no-repeat;
+	width: 15px;
+}
+
+.RadMenu_Flowhub .topArrow,
+.RadMenu_Flowhub .topArrowDisabled
+{
+	background-image:url('img/top.gif');
+	width: 100%;
+}
+
+.RadMenu_Flowhub .bottomArrow,
+.RadMenu_Flowhub .bottomArrowDisabled
+{
+	background-image:url('img/bottom.gif');
+	width:100%;
+}
+
+.RadMenu_Flowhub .rightArrow,
+.RadMenu_Flowhub .leftArrow
+{
+	height:100%;
+}
+
+.RadMenu_Flowhub .rightArrow,
+.RadMenu_Flowhub .rightArrowDisabled
+{
+	background-image: url('img/right.gif');
+}
+
+.RadMenu_Flowhub .vertical .separator .text
+{
+	padding-top: 1px;
+	background:	#d0d2d4;
+	font-size: 0px;
+	border-top:0px;
+	border-bottom:0px;
+}
+
+.RadMenu_Flowhub .expandLeft,
+.RadMenu_Flowhub .expandRight
+{
+	background:transparent url(img/groupImage.gif) right center no-repeat;
+}
+
+.RadMenu_Flowhub_rtl .expandLeft,
+.RadMenu_Flowhub_rtl .expandRight
+{
+	background: transparent url(img/left.gif) left center no-repeat;
+	
+}
+
+/* right to left */
+.RadMenu_Flowhub_rtl .group .link:hover .expandLeft,
+.RadMenu_Flowhub_rtl .group .link:hover .expandRight
+{
+	background:transparent url(img/invertedGroupImageRTL.gif) left center no-repeat;
+	margin: 0px;
+	
+}
+
+.RadMenu_Flowhub .link:hover .expandLeft,
+.RadMenu_Flowhub .link:hover .expandRight,
+.RadMenu_Flowhub .focused .expandLeft,
+.RadMenu_Flowhub .focused .expandRight,
+.RadMenu_Flowhub .expanded .expandLeft,
+.RadMenu_Flowhub .expanded .expandRight
+{
+	background:transparent url(img/invertedGroupImage.gif) right center no-repeat;
+}
